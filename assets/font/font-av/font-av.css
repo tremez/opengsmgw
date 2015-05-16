@@ -1,0 +1,145 @@
+/*
+  Icon Font: font-av
+*/
+
+@font-face {
+  font-family: "font-av";
+  src: url("./font-av_333ea1f4e94afb99afaaec54be7b2e0b.eot");
+  src: url("./font-av_333ea1f4e94afb99afaaec54be7b2e0b.eot?#iefix") format("embedded-opentype"),
+       url("./font-av_333ea1f4e94afb99afaaec54be7b2e0b.woff") format("woff"),
+       url("./font-av_333ea1f4e94afb99afaaec54be7b2e0b.ttf") format("truetype"),
+       url("./font-av_333ea1f4e94afb99afaaec54be7b2e0b.svg#font-av") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "font-av";
+    src: url("./font-av_333ea1f4e94afb99afaaec54be7b2e0b.svg#font-av") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-ic_album_24px:before,
+.icon-ic_av_timer_24px:before,
+.icon-ic_closed_caption_24px:before,
+.icon-ic_equalizer_24px:before,
+.icon-ic_explicit_24px:before,
+.icon-ic_fast_forward_24px:before,
+.icon-ic_fast_rewind_24px:before,
+.icon-ic_games_24px:before,
+.icon-ic_hearing_24px:before,
+.icon-ic_high_quality_24px:before,
+.icon-ic_loop_24px:before,
+.icon-ic_mic_24px:before,
+.icon-ic_mic_none_24px:before,
+.icon-ic_mic_off_24px:before,
+.icon-ic_movie_24px:before,
+.icon-ic_my_library_add_24px:before,
+.icon-ic_my_library_books_24px:before,
+.icon-ic_my_library_music_24px:before,
+.icon-ic_new_releases_24px:before,
+.icon-ic_not_interested_24px:before,
+.icon-ic_pause_24px:before,
+.icon-ic_pause_circle_fill_24px:before,
+.icon-ic_pause_circle_outline_24px:before,
+.icon-ic_play_arrow_24px:before,
+.icon-ic_play_circle_fill_24px:before,
+.icon-ic_play_circle_outline_24px:before,
+.icon-ic_play_shopping_bag_24px:before,
+.icon-ic_playlist_add_24px:before,
+.icon-ic_queue_24px:before,
+.icon-ic_queue_music_24px:before,
+.icon-ic_radio_24px:before,
+.icon-ic_recent_actors_24px:before,
+.icon-ic_repeat_24px:before,
+.icon-ic_repeat_one_24px:before,
+.icon-ic_replay_24px:before,
+.icon-ic_shuffle_24px:before,
+.icon-ic_skip_next_24px:before,
+.icon-ic_skip_previous_24px:before,
+.icon-ic_snooze_24px:before,
+.icon-ic_stop_24px:before,
+.icon-ic_subtitles_24px:before,
+.icon-ic_surround_sound_24px:before,
+.icon-ic_video_collection_24px:before,
+.icon-ic_videocam_24px:before,
+.icon-ic_videocam_off_24px:before,
+.icon-ic_volume_down_18px:before,
+.icon-ic_volume_down_24px:before,
+.icon-ic_volume_mute_18px:before,
+.icon-ic_volume_mute_24px:before,
+.icon-ic_volume_off_24px:before,
+.icon-ic_volume_up_18px:before,
+.icon-ic_volume_up_24px:before,
+.icon-ic_web_24px:before {
+  display: inline-block;
+  font-family: "font-av";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-ic_album_24px:before { content: "\f100"; }
+.icon-ic_av_timer_24px:before { content: "\f101"; }
+.icon-ic_closed_caption_24px:before { content: "\f102"; }
+.icon-ic_equalizer_24px:before { content: "\f103"; }
+.icon-ic_explicit_24px:before { content: "\f104"; }
+.icon-ic_fast_forward_24px:before { content: "\f105"; }
+.icon-ic_fast_rewind_24px:before { content: "\f106"; }
+.icon-ic_games_24px:before { content: "\f107"; }
+.icon-ic_hearing_24px:before { content: "\f108"; }
+.icon-ic_high_quality_24px:before { content: "\f109"; }
+.icon-ic_loop_24px:before { content: "\f10a"; }
+.icon-ic_mic_24px:before { content: "\f10b"; }
+.icon-ic_mic_none_24px:before { content: "\f10c"; }
+.icon-ic_mic_off_24px:before { content: "\f10d"; }
+.icon-ic_movie_24px:before { content: "\f10e"; }
+.icon-ic_my_library_add_24px:before { content: "\f10f"; }
+.icon-ic_my_library_books_24px:before { content: "\f110"; }
+.icon-ic_my_library_music_24px:before { content: "\f111"; }
+.icon-ic_new_releases_24px:before { content: "\f112"; }
+.icon-ic_not_interested_24px:before { content: "\f113"; }
+.icon-ic_pause_24px:before { content: "\f114"; }
+.icon-ic_pause_circle_fill_24px:before { content: "\f115"; }
+.icon-ic_pause_circle_outline_24px:before { content: "\f116"; }
+.icon-ic_play_arrow_24px:before { content: "\f117"; }
+.icon-ic_play_circle_fill_24px:before { content: "\f118"; }
+.icon-ic_play_circle_outline_24px:before { content: "\f119"; }
+.icon-ic_play_shopping_bag_24px:before { content: "\f11a"; }
+.icon-ic_playlist_add_24px:before { content: "\f11b"; }
+.icon-ic_queue_24px:before { content: "\f11c"; }
+.icon-ic_queue_music_24px:before { content: "\f11d"; }
+.icon-ic_radio_24px:before { content: "\f11e"; }
+.icon-ic_recent_actors_24px:before { content: "\f11f"; }
+.icon-ic_repeat_24px:before { content: "\f120"; }
+.icon-ic_repeat_one_24px:before { content: "\f121"; }
+.icon-ic_replay_24px:before { content: "\f122"; }
+.icon-ic_shuffle_24px:before { content: "\f123"; }
+.icon-ic_skip_next_24px:before { content: "\f124"; }
+.icon-ic_skip_previous_24px:before { content: "\f125"; }
+.icon-ic_snooze_24px:before { content: "\f126"; }
+.icon-ic_stop_24px:before { content: "\f127"; }
+.icon-ic_subtitles_24px:before { content: "\f128"; }
+.icon-ic_surround_sound_24px:before { content: "\f129"; }
+.icon-ic_video_collection_24px:before { content: "\f12a"; }
+.icon-ic_videocam_24px:before { content: "\f12b"; }
+.icon-ic_videocam_off_24px:before { content: "\f12c"; }
+.icon-ic_volume_down_18px:before { content: "\f12d"; }
+.icon-ic_volume_down_24px:before { content: "\f12e"; }
+.icon-ic_volume_mute_18px:before { content: "\f12f"; }
+.icon-ic_volume_mute_24px:before { content: "\f130"; }
+.icon-ic_volume_off_24px:before { content: "\f131"; }
+.icon-ic_volume_up_18px:before { content: "\f132"; }
+.icon-ic_volume_up_24px:before { content: "\f133"; }
+.icon-ic_web_24px:before { content: "\f134"; }

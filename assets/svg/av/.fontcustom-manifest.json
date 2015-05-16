@@ -1,0 +1,258 @@
+{
+  "checksum": {
+    "previous": "333ea1f4e94afb99afaaec54be7b2e0b8cf79063801da8eada0a6d8e53bfa398",
+    "current": "333ea1f4e94afb99afaaec54be7b2e0b8cf79063801da8eada0a6d8e53bfa398"
+  },
+  "fonts": [
+    "font-av/font-av_333ea1f4e94afb99afaaec54be7b2e0b.ttf",
+    "font-av/font-av_333ea1f4e94afb99afaaec54be7b2e0b.svg",
+    "font-av/font-av_333ea1f4e94afb99afaaec54be7b2e0b.woff",
+    "font-av/font-av_333ea1f4e94afb99afaaec54be7b2e0b.eot"
+  ],
+  "glyphs": {
+    "ic_album_24px": {
+      "codepoint": 61696,
+      "source": "./ic_album_24px.svg"
+    },
+    "ic_av_timer_24px": {
+      "codepoint": 61697,
+      "source": "./ic_av_timer_24px.svg"
+    },
+    "ic_closed_caption_24px": {
+      "codepoint": 61698,
+      "source": "./ic_closed_caption_24px.svg"
+    },
+    "ic_equalizer_24px": {
+      "codepoint": 61699,
+      "source": "./ic_equalizer_24px.svg"
+    },
+    "ic_explicit_24px": {
+      "codepoint": 61700,
+      "source": "./ic_explicit_24px.svg"
+    },
+    "ic_fast_forward_24px": {
+      "codepoint": 61701,
+      "source": "./ic_fast_forward_24px.svg"
+    },
+    "ic_fast_rewind_24px": {
+      "codepoint": 61702,
+      "source": "./ic_fast_rewind_24px.svg"
+    },
+    "ic_games_24px": {
+      "codepoint": 61703,
+      "source": "./ic_games_24px.svg"
+    },
+    "ic_hearing_24px": {
+      "codepoint": 61704,
+      "source": "./ic_hearing_24px.svg"
+    },
+    "ic_high_quality_24px": {
+      "codepoint": 61705,
+      "source": "./ic_high_quality_24px.svg"
+    },
+    "ic_loop_24px": {
+      "codepoint": 61706,
+      "source": "./ic_loop_24px.svg"
+    },
+    "ic_mic_24px": {
+      "codepoint": 61707,
+      "source": "./ic_mic_24px.svg"
+    },
+    "ic_mic_none_24px": {
+      "codepoint": 61708,
+      "source": "./ic_mic_none_24px.svg"
+    },
+    "ic_mic_off_24px": {
+      "codepoint": 61709,
+      "source": "./ic_mic_off_24px.svg"
+    },
+    "ic_movie_24px": {
+      "codepoint": 61710,
+      "source": "./ic_movie_24px.svg"
+    },
+    "ic_my_library_add_24px": {
+      "codepoint": 61711,
+      "source": "./ic_my_library_add_24px.svg"
+    },
+    "ic_my_library_books_24px": {
+      "codepoint": 61712,
+      "source": "./ic_my_library_books_24px.svg"
+    },
+    "ic_my_library_music_24px": {
+      "codepoint": 61713,
+      "source": "./ic_my_library_music_24px.svg"
+    },
+    "ic_new_releases_24px": {
+      "codepoint": 61714,
+      "source": "./ic_new_releases_24px.svg"
+    },
+    "ic_not_interested_24px": {
+      "codepoint": 61715,
+      "source": "./ic_not_interested_24px.svg"
+    },
+    "ic_pause_24px": {
+      "codepoint": 61716,
+      "source": "./ic_pause_24px.svg"
+    },
+    "ic_pause_circle_fill_24px": {
+      "codepoint": 61717,
+      "source": "./ic_pause_circle_fill_24px.svg"
+    },
+    "ic_pause_circle_outline_24px": {
+      "codepoint": 61718,
+      "source": "./ic_pause_circle_outline_24px.svg"
+    },
+    "ic_play_arrow_24px": {
+      "codepoint": 61719,
+      "source": "./ic_play_arrow_24px.svg"
+    },
+    "ic_play_circle_fill_24px": {
+      "codepoint": 61720,
+      "source": "./ic_play_circle_fill_24px.svg"
+    },
+    "ic_play_circle_outline_24px": {
+      "codepoint": 61721,
+      "source": "./ic_play_circle_outline_24px.svg"
+    },
+    "ic_play_shopping_bag_24px": {
+      "codepoint": 61722,
+      "source": "./ic_play_shopping_bag_24px.svg"
+    },
+    "ic_playlist_add_24px": {
+      "codepoint": 61723,
+      "source": "./ic_playlist_add_24px.svg"
+    },
+    "ic_queue_24px": {
+      "codepoint": 61724,
+      "source": "./ic_queue_24px.svg"
+    },
+    "ic_queue_music_24px": {
+      "codepoint": 61725,
+      "source": "./ic_queue_music_24px.svg"
+    },
+    "ic_radio_24px": {
+      "codepoint": 61726,
+      "source": "./ic_radio_24px.svg"
+    },
+    "ic_recent_actors_24px": {
+      "codepoint": 61727,
+      "source": "./ic_recent_actors_24px.svg"
+    },
+    "ic_repeat_24px": {
+      "codepoint": 61728,
+      "source": "./ic_repeat_24px.svg"
+    },
+    "ic_repeat_one_24px": {
+      "codepoint": 61729,
+      "source": "./ic_repeat_one_24px.svg"
+    },
+    "ic_replay_24px": {
+      "codepoint": 61730,
+      "source": "./ic_replay_24px.svg"
+    },
+    "ic_shuffle_24px": {
+      "codepoint": 61731,
+      "source": "./ic_shuffle_24px.svg"
+    },
+    "ic_skip_next_24px": {
+      "codepoint": 61732,
+      "source": "./ic_skip_next_24px.svg"
+    },
+    "ic_skip_previous_24px": {
+      "codepoint": 61733,
+      "source": "./ic_skip_previous_24px.svg"
+    },
+    "ic_snooze_24px": {
+      "codepoint": 61734,
+      "source": "./ic_snooze_24px.svg"
+    },
+    "ic_stop_24px": {
+      "codepoint": 61735,
+      "source": "./ic_stop_24px.svg"
+    },
+    "ic_subtitles_24px": {
+      "codepoint": 61736,
+      "source": "./ic_subtitles_24px.svg"
+    },
+    "ic_surround_sound_24px": {
+      "codepoint": 61737,
+      "source": "./ic_surround_sound_24px.svg"
+    },
+    "ic_video_collection_24px": {
+      "codepoint": 61738,
+      "source": "./ic_video_collection_24px.svg"
+    },
+    "ic_videocam_24px": {
+      "codepoint": 61739,
+      "source": "./ic_videocam_24px.svg"
+    },
+    "ic_videocam_off_24px": {
+      "codepoint": 61740,
+      "source": "./ic_videocam_off_24px.svg"
+    },
+    "ic_volume_down_18px": {
+      "codepoint": 61741,
+      "source": "./ic_volume_down_18px.svg"
+    },
+    "ic_volume_down_24px": {
+      "codepoint": 61742,
+      "source": "./ic_volume_down_24px.svg"
+    },
+    "ic_volume_mute_18px": {
+      "codepoint": 61743,
+      "source": "./ic_volume_mute_18px.svg"
+    },
+    "ic_volume_mute_24px": {
+      "codepoint": 61744,
+      "source": "./ic_volume_mute_24px.svg"
+    },
+    "ic_volume_off_24px": {
+      "codepoint": 61745,
+      "source": "./ic_volume_off_24px.svg"
+    },
+    "ic_volume_up_18px": {
+      "codepoint": 61746,
+      "source": "./ic_volume_up_18px.svg"
+    },
+    "ic_volume_up_24px": {
+      "codepoint": 61747,
+      "source": "./ic_volume_up_24px.svg"
+    },
+    "ic_web_24px": {
+      "codepoint": 61748,
+      "source": "./ic_web_24px.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": true,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "font-av",
+    "force": false,
+    "input": {
+      "templates": "./",
+      "vectors": "./"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "font-av",
+      "fonts": "font-av",
+      "preview": "font-av"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "font-av/font-av.css",
+    "font-av/font-av-preview.html"
+  ]
+}

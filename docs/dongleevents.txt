@@ -1,0 +1,33 @@
+Manager commands
+
+Chan_dongle can provide the following manager commands:
+
+DongleShowDevices
+DongleSendUSSD
+DongleSendSMS
+DongleSendPDU
+DongleSetCCWA
+DongleReset
+DongleRestart
+DongleStop
+DongleStart
+DongleRemove
+DongleReload
+Manager Events
+
+Chan_dongle generates the following manager events:
+
+DongleDeviceEntry
+DongleShowDevicesComplete
+DongleUSSDStatus
+DongleSMSStatus
+DongleNewCUSD
+DongleNewUSSD
+DongleNewUSSDBase64
+DongleCEND
+DongleCallStateChange
+DongleStatus
+DongleNewCMGR
+DongleNewSMS
+DongleNewSMSBase64
+DonglePortFail

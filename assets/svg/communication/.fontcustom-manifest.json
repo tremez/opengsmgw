@@ -1,0 +1,202 @@
+{
+  "checksum": {
+    "previous": "97c0382f6a02f00806abfba15a218fdb38ce89bce4d8f1dcdadaa55797e24ec8",
+    "current": "97c0382f6a02f00806abfba15a218fdb38ce89bce4d8f1dcdadaa55797e24ec8"
+  },
+  "fonts": [
+    "font-communication/font-communication_97c0382f6a02f00806abfba15a218fdb.ttf",
+    "font-communication/font-communication_97c0382f6a02f00806abfba15a218fdb.svg",
+    "font-communication/font-communication_97c0382f6a02f00806abfba15a218fdb.woff",
+    "font-communication/font-communication_97c0382f6a02f00806abfba15a218fdb.eot"
+  ],
+  "glyphs": {
+    "ic_business_24px": {
+      "codepoint": 61696,
+      "source": "./ic_business_24px.svg"
+    },
+    "ic_call_24px": {
+      "codepoint": 61697,
+      "source": "./ic_call_24px.svg"
+    },
+    "ic_call_end_24px": {
+      "codepoint": 61698,
+      "source": "./ic_call_end_24px.svg"
+    },
+    "ic_call_made_24px": {
+      "codepoint": 61699,
+      "source": "./ic_call_made_24px.svg"
+    },
+    "ic_call_merge_24px": {
+      "codepoint": 61700,
+      "source": "./ic_call_merge_24px.svg"
+    },
+    "ic_call_missed_24px": {
+      "codepoint": 61701,
+      "source": "./ic_call_missed_24px.svg"
+    },
+    "ic_call_received_24px": {
+      "codepoint": 61702,
+      "source": "./ic_call_received_24px.svg"
+    },
+    "ic_call_split_24px": {
+      "codepoint": 61703,
+      "source": "./ic_call_split_24px.svg"
+    },
+    "ic_chat_24px": {
+      "codepoint": 61704,
+      "source": "./ic_chat_24px.svg"
+    },
+    "ic_clear_all_24px": {
+      "codepoint": 61705,
+      "source": "./ic_clear_all_24px.svg"
+    },
+    "ic_comment_24px": {
+      "codepoint": 61706,
+      "source": "./ic_comment_24px.svg"
+    },
+    "ic_contacts_24px": {
+      "codepoint": 61707,
+      "source": "./ic_contacts_24px.svg"
+    },
+    "ic_dialer_sip_24px": {
+      "codepoint": 61708,
+      "source": "./ic_dialer_sip_24px.svg"
+    },
+    "ic_dialpad_24px": {
+      "codepoint": 61709,
+      "source": "./ic_dialpad_24px.svg"
+    },
+    "ic_dnd_on_24px": {
+      "codepoint": 61710,
+      "source": "./ic_dnd_on_24px.svg"
+    },
+    "ic_email_24px": {
+      "codepoint": 61711,
+      "source": "./ic_email_24px.svg"
+    },
+    "ic_forum_24px": {
+      "codepoint": 61712,
+      "source": "./ic_forum_24px.svg"
+    },
+    "ic_import_export_24px": {
+      "codepoint": 61713,
+      "source": "./ic_import_export_24px.svg"
+    },
+    "ic_invert_colors_off_24px": {
+      "codepoint": 61714,
+      "source": "./ic_invert_colors_off_24px.svg"
+    },
+    "ic_invert_colors_on_24px": {
+      "codepoint": 61715,
+      "source": "./ic_invert_colors_on_24px.svg"
+    },
+    "ic_live_help_24px": {
+      "codepoint": 61716,
+      "source": "./ic_live_help_24px.svg"
+    },
+    "ic_location_off_24px": {
+      "codepoint": 61717,
+      "source": "./ic_location_off_24px.svg"
+    },
+    "ic_location_on_24px": {
+      "codepoint": 61718,
+      "source": "./ic_location_on_24px.svg"
+    },
+    "ic_message_24px": {
+      "codepoint": 61719,
+      "source": "./ic_message_24px.svg"
+    },
+    "ic_messenger_24px": {
+      "codepoint": 61720,
+      "source": "./ic_messenger_24px.svg"
+    },
+    "ic_no_sim_24px": {
+      "codepoint": 61721,
+      "source": "./ic_no_sim_24px.svg"
+    },
+    "ic_phone_24px": {
+      "codepoint": 61722,
+      "source": "./ic_phone_24px.svg"
+    },
+    "ic_portable_wifi_off_24px": {
+      "codepoint": 61723,
+      "source": "./ic_portable_wifi_off_24px.svg"
+    },
+    "ic_quick_contacts_dialer_24px": {
+      "codepoint": 61724,
+      "source": "./ic_quick_contacts_dialer_24px.svg"
+    },
+    "ic_quick_contacts_mail_24px": {
+      "codepoint": 61725,
+      "source": "./ic_quick_contacts_mail_24px.svg"
+    },
+    "ic_ring_volume_24px": {
+      "codepoint": 61726,
+      "source": "./ic_ring_volume_24px.svg"
+    },
+    "ic_stay_current_landscape_24px": {
+      "codepoint": 61727,
+      "source": "./ic_stay_current_landscape_24px.svg"
+    },
+    "ic_stay_current_portrait_24px": {
+      "codepoint": 61728,
+      "source": "./ic_stay_current_portrait_24px.svg"
+    },
+    "ic_stay_primary_landscape_24px": {
+      "codepoint": 61729,
+      "source": "./ic_stay_primary_landscape_24px.svg"
+    },
+    "ic_stay_primary_portrait_24px": {
+      "codepoint": 61730,
+      "source": "./ic_stay_primary_portrait_24px.svg"
+    },
+    "ic_swap_calls_24px": {
+      "codepoint": 61731,
+      "source": "./ic_swap_calls_24px.svg"
+    },
+    "ic_textsms_24px": {
+      "codepoint": 61732,
+      "source": "./ic_textsms_24px.svg"
+    },
+    "ic_voicemail_24px": {
+      "codepoint": 61733,
+      "source": "./ic_voicemail_24px.svg"
+    },
+    "ic_vpn_key_24px": {
+      "codepoint": 61734,
+      "source": "./ic_vpn_key_24px.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": true,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "font-communication",
+    "force": false,
+    "input": {
+      "templates": "./",
+      "vectors": "./"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "font-communication",
+      "fonts": "font-communication",
+      "preview": "font-communication"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "font-communication/font-communication.css",
+    "font-communication/font-communication-preview.html"
+  ]
+}

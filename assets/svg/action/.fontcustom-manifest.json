@@ -1,0 +1,706 @@
+{
+  "checksum": {
+    "previous": "65186854aaaa25602dde56f70eb135470e28c14e54dc2de6014b97e3cd45d766",
+    "current": "65186854aaaa25602dde56f70eb135470e28c14e54dc2de6014b97e3cd45d766"
+  },
+  "fonts": [
+    "font-action/font-action_65186854aaaa25602dde56f70eb13547.ttf",
+    "font-action/font-action_65186854aaaa25602dde56f70eb13547.svg",
+    "font-action/font-action_65186854aaaa25602dde56f70eb13547.woff",
+    "font-action/font-action_65186854aaaa25602dde56f70eb13547.eot"
+  ],
+  "glyphs": {
+    "ic_3d_rotation_24px": {
+      "codepoint": 61696,
+      "source": "./ic_3d_rotation_24px.svg"
+    },
+    "ic_accessibility_24px": {
+      "codepoint": 61697,
+      "source": "./ic_accessibility_24px.svg"
+    },
+    "ic_account_balance_24px": {
+      "codepoint": 61698,
+      "source": "./ic_account_balance_24px.svg"
+    },
+    "ic_account_balance_wallet_24px": {
+      "codepoint": 61699,
+      "source": "./ic_account_balance_wallet_24px.svg"
+    },
+    "ic_account_box_18px": {
+      "codepoint": 61700,
+      "source": "./ic_account_box_18px.svg"
+    },
+    "ic_account_box_24px": {
+      "codepoint": 61701,
+      "source": "./ic_account_box_24px.svg"
+    },
+    "ic_account_child_24px": {
+      "codepoint": 61702,
+      "source": "./ic_account_child_24px.svg"
+    },
+    "ic_account_circle_18px": {
+      "codepoint": 61703,
+      "source": "./ic_account_circle_18px.svg"
+    },
+    "ic_account_circle_24px": {
+      "codepoint": 61704,
+      "source": "./ic_account_circle_24px.svg"
+    },
+    "ic_add_shopping_cart_24px": {
+      "codepoint": 61705,
+      "source": "./ic_add_shopping_cart_24px.svg"
+    },
+    "ic_alarm_24px": {
+      "codepoint": 61706,
+      "source": "./ic_alarm_24px.svg"
+    },
+    "ic_alarm_add_24px": {
+      "codepoint": 61707,
+      "source": "./ic_alarm_add_24px.svg"
+    },
+    "ic_alarm_off_24px": {
+      "codepoint": 61708,
+      "source": "./ic_alarm_off_24px.svg"
+    },
+    "ic_alarm_on_24px": {
+      "codepoint": 61709,
+      "source": "./ic_alarm_on_24px.svg"
+    },
+    "ic_android_24px": {
+      "codepoint": 61710,
+      "source": "./ic_android_24px.svg"
+    },
+    "ic_announcement_24px": {
+      "codepoint": 61711,
+      "source": "./ic_announcement_24px.svg"
+    },
+    "ic_aspect_ratio_24px": {
+      "codepoint": 61712,
+      "source": "./ic_aspect_ratio_24px.svg"
+    },
+    "ic_assessment_24px": {
+      "codepoint": 61713,
+      "source": "./ic_assessment_24px.svg"
+    },
+    "ic_assignment_24px": {
+      "codepoint": 61714,
+      "source": "./ic_assignment_24px.svg"
+    },
+    "ic_assignment_ind_24px": {
+      "codepoint": 61715,
+      "source": "./ic_assignment_ind_24px.svg"
+    },
+    "ic_assignment_late_24px": {
+      "codepoint": 61716,
+      "source": "./ic_assignment_late_24px.svg"
+    },
+    "ic_assignment_return_24px": {
+      "codepoint": 61717,
+      "source": "./ic_assignment_return_24px.svg"
+    },
+    "ic_assignment_returned_24px": {
+      "codepoint": 61718,
+      "source": "./ic_assignment_returned_24px.svg"
+    },
+    "ic_assignment_turned_in_24px": {
+      "codepoint": 61719,
+      "source": "./ic_assignment_turned_in_24px.svg"
+    },
+    "ic_autorenew_24px": {
+      "codepoint": 61720,
+      "source": "./ic_autorenew_24px.svg"
+    },
+    "ic_backup_24px": {
+      "codepoint": 61721,
+      "source": "./ic_backup_24px.svg"
+    },
+    "ic_book_24px": {
+      "codepoint": 61722,
+      "source": "./ic_book_24px.svg"
+    },
+    "ic_bookmark_24px": {
+      "codepoint": 61723,
+      "source": "./ic_bookmark_24px.svg"
+    },
+    "ic_bookmark_outline_24px": {
+      "codepoint": 61724,
+      "source": "./ic_bookmark_outline_24px.svg"
+    },
+    "ic_bug_report_24px": {
+      "codepoint": 61725,
+      "source": "./ic_bug_report_24px.svg"
+    },
+    "ic_cached_24px": {
+      "codepoint": 61726,
+      "source": "./ic_cached_24px.svg"
+    },
+    "ic_class_24px": {
+      "codepoint": 61727,
+      "source": "./ic_class_24px.svg"
+    },
+    "ic_credit_card_24px": {
+      "codepoint": 61728,
+      "source": "./ic_credit_card_24px.svg"
+    },
+    "ic_dashboard_24px": {
+      "codepoint": 61729,
+      "source": "./ic_dashboard_24px.svg"
+    },
+    "ic_delete_24px": {
+      "codepoint": 61730,
+      "source": "./ic_delete_24px.svg"
+    },
+    "ic_description_24px": {
+      "codepoint": 61731,
+      "source": "./ic_description_24px.svg"
+    },
+    "ic_dns_24px": {
+      "codepoint": 61732,
+      "source": "./ic_dns_24px.svg"
+    },
+    "ic_done_24px": {
+      "codepoint": 61733,
+      "source": "./ic_done_24px.svg"
+    },
+    "ic_done_all_24px": {
+      "codepoint": 61734,
+      "source": "./ic_done_all_24px.svg"
+    },
+    "ic_event_18px": {
+      "codepoint": 61735,
+      "source": "./ic_event_18px.svg"
+    },
+    "ic_event_24px": {
+      "codepoint": 61736,
+      "source": "./ic_event_24px.svg"
+    },
+    "ic_exit_to_app_24px": {
+      "codepoint": 61737,
+      "source": "./ic_exit_to_app_24px.svg"
+    },
+    "ic_explore_24px": {
+      "codepoint": 61738,
+      "source": "./ic_explore_24px.svg"
+    },
+    "ic_extension_24px": {
+      "codepoint": 61739,
+      "source": "./ic_extension_24px.svg"
+    },
+    "ic_face_unlock_24px": {
+      "codepoint": 61740,
+      "source": "./ic_face_unlock_24px.svg"
+    },
+    "ic_favorite_24px": {
+      "codepoint": 61741,
+      "source": "./ic_favorite_24px.svg"
+    },
+    "ic_favorite_outline_24px": {
+      "codepoint": 61742,
+      "source": "./ic_favorite_outline_24px.svg"
+    },
+    "ic_find_in_page_24px": {
+      "codepoint": 61743,
+      "source": "./ic_find_in_page_24px.svg"
+    },
+    "ic_find_replace_24px": {
+      "codepoint": 61744,
+      "source": "./ic_find_replace_24px.svg"
+    },
+    "ic_flip_to_back_24px": {
+      "codepoint": 61745,
+      "source": "./ic_flip_to_back_24px.svg"
+    },
+    "ic_flip_to_front_24px": {
+      "codepoint": 61746,
+      "source": "./ic_flip_to_front_24px.svg"
+    },
+    "ic_get_app_24px": {
+      "codepoint": 61747,
+      "source": "./ic_get_app_24px.svg"
+    },
+    "ic_grade_24px": {
+      "codepoint": 61748,
+      "source": "./ic_grade_24px.svg"
+    },
+    "ic_group_work_24px": {
+      "codepoint": 61749,
+      "source": "./ic_group_work_24px.svg"
+    },
+    "ic_help_24px": {
+      "codepoint": 61750,
+      "source": "./ic_help_24px.svg"
+    },
+    "ic_highlight_remove_24px": {
+      "codepoint": 61751,
+      "source": "./ic_highlight_remove_24px.svg"
+    },
+    "ic_history_24px": {
+      "codepoint": 61752,
+      "source": "./ic_history_24px.svg"
+    },
+    "ic_home_24px": {
+      "codepoint": 61753,
+      "source": "./ic_home_24px.svg"
+    },
+    "ic_https_24px": {
+      "codepoint": 61754,
+      "source": "./ic_https_24px.svg"
+    },
+    "ic_info_24px": {
+      "codepoint": 61755,
+      "source": "./ic_info_24px.svg"
+    },
+    "ic_info_outline_24px": {
+      "codepoint": 61756,
+      "source": "./ic_info_outline_24px.svg"
+    },
+    "ic_input_24px": {
+      "codepoint": 61757,
+      "source": "./ic_input_24px.svg"
+    },
+    "ic_invert_colors_24px": {
+      "codepoint": 61758,
+      "source": "./ic_invert_colors_24px.svg"
+    },
+    "ic_label_24px": {
+      "codepoint": 61759,
+      "source": "./ic_label_24px.svg"
+    },
+    "ic_label_outline_24px": {
+      "codepoint": 61760,
+      "source": "./ic_label_outline_24px.svg"
+    },
+    "ic_language_24px": {
+      "codepoint": 61761,
+      "source": "./ic_language_24px.svg"
+    },
+    "ic_launch_24px": {
+      "codepoint": 61762,
+      "source": "./ic_launch_24px.svg"
+    },
+    "ic_list_24px": {
+      "codepoint": 61763,
+      "source": "./ic_list_24px.svg"
+    },
+    "ic_lock_24px": {
+      "codepoint": 61764,
+      "source": "./ic_lock_24px.svg"
+    },
+    "ic_lock_open_24px": {
+      "codepoint": 61765,
+      "source": "./ic_lock_open_24px.svg"
+    },
+    "ic_lock_outline_24px": {
+      "codepoint": 61766,
+      "source": "./ic_lock_outline_24px.svg"
+    },
+    "ic_loyalty_24px": {
+      "codepoint": 61767,
+      "source": "./ic_loyalty_24px.svg"
+    },
+    "ic_markunread_mailbox_24px": {
+      "codepoint": 61768,
+      "source": "./ic_markunread_mailbox_24px.svg"
+    },
+    "ic_note_add_24px": {
+      "codepoint": 61769,
+      "source": "./ic_note_add_24px.svg"
+    },
+    "ic_open_in_browser_24px": {
+      "codepoint": 61770,
+      "source": "./ic_open_in_browser_24px.svg"
+    },
+    "ic_open_in_new_24px": {
+      "codepoint": 61771,
+      "source": "./ic_open_in_new_24px.svg"
+    },
+    "ic_open_with_24px": {
+      "codepoint": 61772,
+      "source": "./ic_open_with_24px.svg"
+    },
+    "ic_pageview_24px": {
+      "codepoint": 61773,
+      "source": "./ic_pageview_24px.svg"
+    },
+    "ic_payment_24px": {
+      "codepoint": 61774,
+      "source": "./ic_payment_24px.svg"
+    },
+    "ic_perm_camera_mic_24px": {
+      "codepoint": 61775,
+      "source": "./ic_perm_camera_mic_24px.svg"
+    },
+    "ic_perm_contact_cal_24px": {
+      "codepoint": 61776,
+      "source": "./ic_perm_contact_cal_24px.svg"
+    },
+    "ic_perm_data_setting_24px": {
+      "codepoint": 61777,
+      "source": "./ic_perm_data_setting_24px.svg"
+    },
+    "ic_perm_device_info_24px": {
+      "codepoint": 61778,
+      "source": "./ic_perm_device_info_24px.svg"
+    },
+    "ic_perm_identity_24px": {
+      "codepoint": 61779,
+      "source": "./ic_perm_identity_24px.svg"
+    },
+    "ic_perm_media_24px": {
+      "codepoint": 61780,
+      "source": "./ic_perm_media_24px.svg"
+    },
+    "ic_perm_phone_msg_24px": {
+      "codepoint": 61781,
+      "source": "./ic_perm_phone_msg_24px.svg"
+    },
+    "ic_perm_scan_wifi_24px": {
+      "codepoint": 61782,
+      "source": "./ic_perm_scan_wifi_24px.svg"
+    },
+    "ic_picture_in_picture_24px": {
+      "codepoint": 61783,
+      "source": "./ic_picture_in_picture_24px.svg"
+    },
+    "ic_polymer_24px": {
+      "codepoint": 61784,
+      "source": "./ic_polymer_24px.svg"
+    },
+    "ic_print_24px": {
+      "codepoint": 61785,
+      "source": "./ic_print_24px.svg"
+    },
+    "ic_query_builder_24px": {
+      "codepoint": 61786,
+      "source": "./ic_query_builder_24px.svg"
+    },
+    "ic_question_answer_24px": {
+      "codepoint": 61787,
+      "source": "./ic_question_answer_24px.svg"
+    },
+    "ic_receipt_24px": {
+      "codepoint": 61788,
+      "source": "./ic_receipt_24px.svg"
+    },
+    "ic_redeem_24px": {
+      "codepoint": 61789,
+      "source": "./ic_redeem_24px.svg"
+    },
+    "ic_reorder_24px": {
+      "codepoint": 61790,
+      "source": "./ic_reorder_24px.svg"
+    },
+    "ic_report_problem_24px": {
+      "codepoint": 61791,
+      "source": "./ic_report_problem_24px.svg"
+    },
+    "ic_restore_24px": {
+      "codepoint": 61792,
+      "source": "./ic_restore_24px.svg"
+    },
+    "ic_room_24px": {
+      "codepoint": 61793,
+      "source": "./ic_room_24px.svg"
+    },
+    "ic_schedule_24px": {
+      "codepoint": 61794,
+      "source": "./ic_schedule_24px.svg"
+    },
+    "ic_search_24px": {
+      "codepoint": 61795,
+      "source": "./ic_search_24px.svg"
+    },
+    "ic_settings_24px": {
+      "codepoint": 61796,
+      "source": "./ic_settings_24px.svg"
+    },
+    "ic_settings_applications_24px": {
+      "codepoint": 61797,
+      "source": "./ic_settings_applications_24px.svg"
+    },
+    "ic_settings_backup_restore_24px": {
+      "codepoint": 61798,
+      "source": "./ic_settings_backup_restore_24px.svg"
+    },
+    "ic_settings_bluetooth_24px": {
+      "codepoint": 61799,
+      "source": "./ic_settings_bluetooth_24px.svg"
+    },
+    "ic_settings_cell_24px": {
+      "codepoint": 61800,
+      "source": "./ic_settings_cell_24px.svg"
+    },
+    "ic_settings_display_24px": {
+      "codepoint": 61801,
+      "source": "./ic_settings_display_24px.svg"
+    },
+    "ic_settings_ethernet_24px": {
+      "codepoint": 61802,
+      "source": "./ic_settings_ethernet_24px.svg"
+    },
+    "ic_settings_input_antenna_24px": {
+      "codepoint": 61803,
+      "source": "./ic_settings_input_antenna_24px.svg"
+    },
+    "ic_settings_input_component_24px": {
+      "codepoint": 61804,
+      "source": "./ic_settings_input_component_24px.svg"
+    },
+    "ic_settings_input_composite_24px": {
+      "codepoint": 61805,
+      "source": "./ic_settings_input_composite_24px.svg"
+    },
+    "ic_settings_input_hdmi_24px": {
+      "codepoint": 61806,
+      "source": "./ic_settings_input_hdmi_24px.svg"
+    },
+    "ic_settings_input_svideo_24px": {
+      "codepoint": 61807,
+      "source": "./ic_settings_input_svideo_24px.svg"
+    },
+    "ic_settings_overscan_24px": {
+      "codepoint": 61808,
+      "source": "./ic_settings_overscan_24px.svg"
+    },
+    "ic_settings_phone_24px": {
+      "codepoint": 61809,
+      "source": "./ic_settings_phone_24px.svg"
+    },
+    "ic_settings_power_24px": {
+      "codepoint": 61810,
+      "source": "./ic_settings_power_24px.svg"
+    },
+    "ic_settings_remote_24px": {
+      "codepoint": 61811,
+      "source": "./ic_settings_remote_24px.svg"
+    },
+    "ic_settings_voice_24px": {
+      "codepoint": 61812,
+      "source": "./ic_settings_voice_24px.svg"
+    },
+    "ic_shop_24px": {
+      "codepoint": 61813,
+      "source": "./ic_shop_24px.svg"
+    },
+    "ic_shop_two_24px": {
+      "codepoint": 61814,
+      "source": "./ic_shop_two_24px.svg"
+    },
+    "ic_shopping_basket_24px": {
+      "codepoint": 61815,
+      "source": "./ic_shopping_basket_24px.svg"
+    },
+    "ic_shopping_cart_24px": {
+      "codepoint": 61816,
+      "source": "./ic_shopping_cart_24px.svg"
+    },
+    "ic_speaker_notes_24px": {
+      "codepoint": 61817,
+      "source": "./ic_speaker_notes_24px.svg"
+    },
+    "ic_spellcheck_24px": {
+      "codepoint": 61818,
+      "source": "./ic_spellcheck_24px.svg"
+    },
+    "ic_star_rate_24px": {
+      "codepoint": 61819,
+      "source": "./ic_star_rate_24px.svg"
+    },
+    "ic_stars_24px": {
+      "codepoint": 61820,
+      "source": "./ic_stars_24px.svg"
+    },
+    "ic_store_24px": {
+      "codepoint": 61821,
+      "source": "./ic_store_24px.svg"
+    },
+    "ic_subject_24px": {
+      "codepoint": 61822,
+      "source": "./ic_subject_24px.svg"
+    },
+    "ic_supervisor_account_24px": {
+      "codepoint": 61823,
+      "source": "./ic_supervisor_account_24px.svg"
+    },
+    "ic_swap_horiz_24px": {
+      "codepoint": 61824,
+      "source": "./ic_swap_horiz_24px.svg"
+    },
+    "ic_swap_vert_24px": {
+      "codepoint": 61825,
+      "source": "./ic_swap_vert_24px.svg"
+    },
+    "ic_swap_vert_circle_24px": {
+      "codepoint": 61826,
+      "source": "./ic_swap_vert_circle_24px.svg"
+    },
+    "ic_system_update_tv_24px": {
+      "codepoint": 61827,
+      "source": "./ic_system_update_tv_24px.svg"
+    },
+    "ic_tab_24px": {
+      "codepoint": 61828,
+      "source": "./ic_tab_24px.svg"
+    },
+    "ic_tab_unselected_24px": {
+      "codepoint": 61829,
+      "source": "./ic_tab_unselected_24px.svg"
+    },
+    "ic_theaters_24px": {
+      "codepoint": 61830,
+      "source": "./ic_theaters_24px.svg"
+    },
+    "ic_thumb_down_24px": {
+      "codepoint": 61831,
+      "source": "./ic_thumb_down_24px.svg"
+    },
+    "ic_thumb_up_24px": {
+      "codepoint": 61832,
+      "source": "./ic_thumb_up_24px.svg"
+    },
+    "ic_thumbs_up_down_24px": {
+      "codepoint": 61833,
+      "source": "./ic_thumbs_up_down_24px.svg"
+    },
+    "ic_toc_24px": {
+      "codepoint": 61834,
+      "source": "./ic_toc_24px.svg"
+    },
+    "ic_today_24px": {
+      "codepoint": 61835,
+      "source": "./ic_today_24px.svg"
+    },
+    "ic_track_changes_24px": {
+      "codepoint": 61836,
+      "source": "./ic_track_changes_24px.svg"
+    },
+    "ic_translate_24px": {
+      "codepoint": 61837,
+      "source": "./ic_translate_24px.svg"
+    },
+    "ic_trending_down_24px": {
+      "codepoint": 61838,
+      "source": "./ic_trending_down_24px.svg"
+    },
+    "ic_trending_neutral_24px": {
+      "codepoint": 61839,
+      "source": "./ic_trending_neutral_24px.svg"
+    },
+    "ic_trending_up_24px": {
+      "codepoint": 61840,
+      "source": "./ic_trending_up_24px.svg"
+    },
+    "ic_turned_in_24px": {
+      "codepoint": 61841,
+      "source": "./ic_turned_in_24px.svg"
+    },
+    "ic_turned_in_not_24px": {
+      "codepoint": 61842,
+      "source": "./ic_turned_in_not_24px.svg"
+    },
+    "ic_verified_user_24px": {
+      "codepoint": 61843,
+      "source": "./ic_verified_user_24px.svg"
+    },
+    "ic_view_agenda_24px": {
+      "codepoint": 61844,
+      "source": "./ic_view_agenda_24px.svg"
+    },
+    "ic_view_array_24px": {
+      "codepoint": 61845,
+      "source": "./ic_view_array_24px.svg"
+    },
+    "ic_view_carousel_24px": {
+      "codepoint": 61846,
+      "source": "./ic_view_carousel_24px.svg"
+    },
+    "ic_view_column_24px": {
+      "codepoint": 61847,
+      "source": "./ic_view_column_24px.svg"
+    },
+    "ic_view_day_24px": {
+      "codepoint": 61848,
+      "source": "./ic_view_day_24px.svg"
+    },
+    "ic_view_headline_24px": {
+      "codepoint": 61849,
+      "source": "./ic_view_headline_24px.svg"
+    },
+    "ic_view_list_24px": {
+      "codepoint": 61850,
+      "source": "./ic_view_list_24px.svg"
+    },
+    "ic_view_module_24px": {
+      "codepoint": 61851,
+      "source": "./ic_view_module_24px.svg"
+    },
+    "ic_view_quilt_24px": {
+      "codepoint": 61852,
+      "source": "./ic_view_quilt_24px.svg"
+    },
+    "ic_view_stream_24px": {
+      "codepoint": 61853,
+      "source": "./ic_view_stream_24px.svg"
+    },
+    "ic_view_week_24px": {
+      "codepoint": 61854,
+      "source": "./ic_view_week_24px.svg"
+    },
+    "ic_visibility_24px": {
+      "codepoint": 61855,
+      "source": "./ic_visibility_24px.svg"
+    },
+    "ic_visibility_off_24px": {
+      "codepoint": 61856,
+      "source": "./ic_visibility_off_24px.svg"
+    },
+    "ic_wallet_giftcard_24px": {
+      "codepoint": 61857,
+      "source": "./ic_wallet_giftcard_24px.svg"
+    },
+    "ic_wallet_membership_24px": {
+      "codepoint": 61858,
+      "source": "./ic_wallet_membership_24px.svg"
+    },
+    "ic_wallet_travel_24px": {
+      "codepoint": 61859,
+      "source": "./ic_wallet_travel_24px.svg"
+    },
+    "ic_work_24px": {
+      "codepoint": 61860,
+      "source": "./ic_work_24px.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": true,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "font-action",
+    "force": false,
+    "input": {
+      "templates": "./",
+      "vectors": "./"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "font-action",
+      "fonts": "font-action",
+      "preview": "font-action"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "font-action/font-action.css",
+    "font-action/font-action-preview.html"
+  ]
+}

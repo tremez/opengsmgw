@@ -1,0 +1,43 @@
+/*
+  Icon Font: font-alert
+*/
+
+@font-face {
+  font-family: "font-alert";
+  src: url("./font-alert_815c3b35da0fb06d794ee175cd7b1d94.eot");
+  src: url("./font-alert_815c3b35da0fb06d794ee175cd7b1d94.eot?#iefix") format("embedded-opentype"),
+       url("./font-alert_815c3b35da0fb06d794ee175cd7b1d94.woff") format("woff"),
+       url("./font-alert_815c3b35da0fb06d794ee175cd7b1d94.ttf") format("truetype"),
+       url("./font-alert_815c3b35da0fb06d794ee175cd7b1d94.svg#font-alert") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "font-alert";
+    src: url("./font-alert_815c3b35da0fb06d794ee175cd7b1d94.svg#font-alert") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-ic_error_24px:before,
+.icon-ic_warning_24px:before {
+  display: inline-block;
+  font-family: "font-alert";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-ic_error_24px:before { content: "\f100"; }
+.icon-ic_warning_24px:before { content: "\f101"; }

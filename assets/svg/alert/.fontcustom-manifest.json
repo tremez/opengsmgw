@@ -1,0 +1,54 @@
+{
+  "checksum": {
+    "previous": "815c3b35da0fb06d794ee175cd7b1d944bee26d964ba21f1026c64c54d6f35fa",
+    "current": "815c3b35da0fb06d794ee175cd7b1d944bee26d964ba21f1026c64c54d6f35fa"
+  },
+  "fonts": [
+    "font-alert/font-alert_815c3b35da0fb06d794ee175cd7b1d94.ttf",
+    "font-alert/font-alert_815c3b35da0fb06d794ee175cd7b1d94.svg",
+    "font-alert/font-alert_815c3b35da0fb06d794ee175cd7b1d94.woff",
+    "font-alert/font-alert_815c3b35da0fb06d794ee175cd7b1d94.eot"
+  ],
+  "glyphs": {
+    "ic_error_24px": {
+      "codepoint": 61696,
+      "source": "./ic_error_24px.svg"
+    },
+    "ic_warning_24px": {
+      "codepoint": 61697,
+      "source": "./ic_warning_24px.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": true,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "font-alert",
+    "force": false,
+    "input": {
+      "templates": "./",
+      "vectors": "./"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "font-alert",
+      "fonts": "font-alert",
+      "preview": "font-alert"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "font-alert/font-alert.css",
+    "font-alert/font-alert-preview.html"
+  ]
+}

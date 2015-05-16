@@ -1,0 +1,117 @@
+/*
+  Icon Font: font-communication
+*/
+
+@font-face {
+  font-family: "font-communication";
+  src: url("./font-communication_97c0382f6a02f00806abfba15a218fdb.eot");
+  src: url("./font-communication_97c0382f6a02f00806abfba15a218fdb.eot?#iefix") format("embedded-opentype"),
+       url("./font-communication_97c0382f6a02f00806abfba15a218fdb.woff") format("woff"),
+       url("./font-communication_97c0382f6a02f00806abfba15a218fdb.ttf") format("truetype"),
+       url("./font-communication_97c0382f6a02f00806abfba15a218fdb.svg#font-communication") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "font-communication";
+    src: url("./font-communication_97c0382f6a02f00806abfba15a218fdb.svg#font-communication") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-ic_business_24px:before,
+.icon-ic_call_24px:before,
+.icon-ic_call_end_24px:before,
+.icon-ic_call_made_24px:before,
+.icon-ic_call_merge_24px:before,
+.icon-ic_call_missed_24px:before,
+.icon-ic_call_received_24px:before,
+.icon-ic_call_split_24px:before,
+.icon-ic_chat_24px:before,
+.icon-ic_clear_all_24px:before,
+.icon-ic_comment_24px:before,
+.icon-ic_contacts_24px:before,
+.icon-ic_dialer_sip_24px:before,
+.icon-ic_dialpad_24px:before,
+.icon-ic_dnd_on_24px:before,
+.icon-ic_email_24px:before,
+.icon-ic_forum_24px:before,
+.icon-ic_import_export_24px:before,
+.icon-ic_invert_colors_off_24px:before,
+.icon-ic_invert_colors_on_24px:before,
+.icon-ic_live_help_24px:before,
+.icon-ic_location_off_24px:before,
+.icon-ic_location_on_24px:before,
+.icon-ic_message_24px:before,
+.icon-ic_messenger_24px:before,
+.icon-ic_no_sim_24px:before,
+.icon-ic_phone_24px:before,
+.icon-ic_portable_wifi_off_24px:before,
+.icon-ic_quick_contacts_dialer_24px:before,
+.icon-ic_quick_contacts_mail_24px:before,
+.icon-ic_ring_volume_24px:before,
+.icon-ic_stay_current_landscape_24px:before,
+.icon-ic_stay_current_portrait_24px:before,
+.icon-ic_stay_primary_landscape_24px:before,
+.icon-ic_stay_primary_portrait_24px:before,
+.icon-ic_swap_calls_24px:before,
+.icon-ic_textsms_24px:before,
+.icon-ic_voicemail_24px:before,
+.icon-ic_vpn_key_24px:before {
+  display: inline-block;
+  font-family: "font-communication";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-ic_business_24px:before { content: "\f100"; }
+.icon-ic_call_24px:before { content: "\f101"; }
+.icon-ic_call_end_24px:before { content: "\f102"; }
+.icon-ic_call_made_24px:before { content: "\f103"; }
+.icon-ic_call_merge_24px:before { content: "\f104"; }
+.icon-ic_call_missed_24px:before { content: "\f105"; }
+.icon-ic_call_received_24px:before { content: "\f106"; }
+.icon-ic_call_split_24px:before { content: "\f107"; }
+.icon-ic_chat_24px:before { content: "\f108"; }
+.icon-ic_clear_all_24px:before { content: "\f109"; }
+.icon-ic_comment_24px:before { content: "\f10a"; }
+.icon-ic_contacts_24px:before { content: "\f10b"; }
+.icon-ic_dialer_sip_24px:before { content: "\f10c"; }
+.icon-ic_dialpad_24px:before { content: "\f10d"; }
+.icon-ic_dnd_on_24px:before { content: "\f10e"; }
+.icon-ic_email_24px:before { content: "\f10f"; }
+.icon-ic_forum_24px:before { content: "\f110"; }
+.icon-ic_import_export_24px:before { content: "\f111"; }
+.icon-ic_invert_colors_off_24px:before { content: "\f112"; }
+.icon-ic_invert_colors_on_24px:before { content: "\f113"; }
+.icon-ic_live_help_24px:before { content: "\f114"; }
+.icon-ic_location_off_24px:before { content: "\f115"; }
+.icon-ic_location_on_24px:before { content: "\f116"; }
+.icon-ic_message_24px:before { content: "\f117"; }
+.icon-ic_messenger_24px:before { content: "\f118"; }
+.icon-ic_no_sim_24px:before { content: "\f119"; }
+.icon-ic_phone_24px:before { content: "\f11a"; }
+.icon-ic_portable_wifi_off_24px:before { content: "\f11b"; }
+.icon-ic_quick_contacts_dialer_24px:before { content: "\f11c"; }
+.icon-ic_quick_contacts_mail_24px:before { content: "\f11d"; }
+.icon-ic_ring_volume_24px:before { content: "\f11e"; }
+.icon-ic_stay_current_landscape_24px:before { content: "\f11f"; }
+.icon-ic_stay_current_portrait_24px:before { content: "\f120"; }
+.icon-ic_stay_primary_landscape_24px:before { content: "\f121"; }
+.icon-ic_stay_primary_portrait_24px:before { content: "\f122"; }
+.icon-ic_swap_calls_24px:before { content: "\f123"; }
+.icon-ic_textsms_24px:before { content: "\f124"; }
+.icon-ic_voicemail_24px:before { content: "\f125"; }
+.icon-ic_vpn_key_24px:before { content: "\f126"; }

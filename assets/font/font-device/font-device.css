@@ -1,0 +1,291 @@
+/*
+  Icon Font: font-device
+*/
+
+@font-face {
+  font-family: "font-device";
+  src: url("./font-device_6b9bb67da29b062e388ecd4efc9d851e.eot");
+  src: url("./font-device_6b9bb67da29b062e388ecd4efc9d851e.eot?#iefix") format("embedded-opentype"),
+       url("./font-device_6b9bb67da29b062e388ecd4efc9d851e.woff") format("woff"),
+       url("./font-device_6b9bb67da29b062e388ecd4efc9d851e.ttf") format("truetype"),
+       url("./font-device_6b9bb67da29b062e388ecd4efc9d851e.svg#font-device") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "font-device";
+    src: url("./font-device_6b9bb67da29b062e388ecd4efc9d851e.svg#font-device") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-ic_access_alarm_24px:before,
+.icon-ic_access_alarms_24px:before,
+.icon-ic_access_time_24px:before,
+.icon-ic_add_alarm_24px:before,
+.icon-ic_airplanemode_off_24px:before,
+.icon-ic_airplanemode_on_24px:before,
+.icon-ic_battery_20_18px:before,
+.icon-ic_battery_20_24px:before,
+.icon-ic_battery_30_18px:before,
+.icon-ic_battery_30_24px:before,
+.icon-ic_battery_50_18px:before,
+.icon-ic_battery_50_24px:before,
+.icon-ic_battery_60_18px:before,
+.icon-ic_battery_60_24px:before,
+.icon-ic_battery_80_18px:before,
+.icon-ic_battery_80_24px:before,
+.icon-ic_battery_90_18px:before,
+.icon-ic_battery_90_24px:before,
+.icon-ic_battery_alert_18px:before,
+.icon-ic_battery_alert_24px:before,
+.icon-ic_battery_charging_20_18px:before,
+.icon-ic_battery_charging_20_24px:before,
+.icon-ic_battery_charging_30_18px:before,
+.icon-ic_battery_charging_30_24px:before,
+.icon-ic_battery_charging_50_18px:before,
+.icon-ic_battery_charging_50_24px:before,
+.icon-ic_battery_charging_60_18px:before,
+.icon-ic_battery_charging_60_24px:before,
+.icon-ic_battery_charging_80_18px:before,
+.icon-ic_battery_charging_80_24px:before,
+.icon-ic_battery_charging_90_18px:before,
+.icon-ic_battery_charging_90_24px:before,
+.icon-ic_battery_charging_full_18px:before,
+.icon-ic_battery_charging_full_24px:before,
+.icon-ic_battery_full_18px:before,
+.icon-ic_battery_full_24px:before,
+.icon-ic_battery_std_18px:before,
+.icon-ic_battery_std_24px:before,
+.icon-ic_battery_unknown_18px:before,
+.icon-ic_battery_unknown_24px:before,
+.icon-ic_bluetooth_24px:before,
+.icon-ic_bluetooth_connected_24px:before,
+.icon-ic_bluetooth_disabled_24px:before,
+.icon-ic_bluetooth_searching_24px:before,
+.icon-ic_brightness_auto_24px:before,
+.icon-ic_brightness_high_24px:before,
+.icon-ic_brightness_low_24px:before,
+.icon-ic_brightness_medium_24px:before,
+.icon-ic_data_usage_24px:before,
+.icon-ic_developer_mode_24px:before,
+.icon-ic_devices_24px:before,
+.icon-ic_dvr_24px:before,
+.icon-ic_gps_fixed_24px:before,
+.icon-ic_gps_not_fixed_24px:before,
+.icon-ic_gps_off_24px:before,
+.icon-ic_location_disabled_24px:before,
+.icon-ic_location_searching_24px:before,
+.icon-ic_multitrack_audio_24px:before,
+.icon-ic_network_cell_18px:before,
+.icon-ic_network_cell_24px:before,
+.icon-ic_network_wifi_18px:before,
+.icon-ic_network_wifi_24px:before,
+.icon-ic_nfc_24px:before,
+.icon-ic_now_wallpaper_18px:before,
+.icon-ic_now_wallpaper_24px:before,
+.icon-ic_now_widgets_18px:before,
+.icon-ic_now_widgets_24px:before,
+.icon-ic_screen_lock_landscape_24px:before,
+.icon-ic_screen_lock_portrait_24px:before,
+.icon-ic_screen_lock_rotation_24px:before,
+.icon-ic_screen_rotation_24px:before,
+.icon-ic_sd_storage_24px:before,
+.icon-ic_settings_system_daydream_24px:before,
+.icon-ic_signal_cellular_0_bar_18px:before,
+.icon-ic_signal_cellular_0_bar_24px:before,
+.icon-ic_signal_cellular_1_bar_18px:before,
+.icon-ic_signal_cellular_1_bar_24px:before,
+.icon-ic_signal_cellular_2_bar_18px:before,
+.icon-ic_signal_cellular_2_bar_24px:before,
+.icon-ic_signal_cellular_3_bar_18px:before,
+.icon-ic_signal_cellular_3_bar_24px:before,
+.icon-ic_signal_cellular_4_bar_18px:before,
+.icon-ic_signal_cellular_4_bar_24px:before,
+.icon-ic_signal_cellular_connected_no_internet_0_bar_18px:before,
+.icon-ic_signal_cellular_connected_no_internet_0_bar_24px:before,
+.icon-ic_signal_cellular_connected_no_internet_1_bar_18px:before,
+.icon-ic_signal_cellular_connected_no_internet_1_bar_24px:before,
+.icon-ic_signal_cellular_connected_no_internet_2_bar_18px:before,
+.icon-ic_signal_cellular_connected_no_internet_2_bar_24px:before,
+.icon-ic_signal_cellular_connected_no_internet_3_bar_18px:before,
+.icon-ic_signal_cellular_connected_no_internet_3_bar_24px:before,
+.icon-ic_signal_cellular_connected_no_internet_4_bar_18px:before,
+.icon-ic_signal_cellular_connected_no_internet_4_bar_24px:before,
+.icon-ic_signal_cellular_no_sim_24px:before,
+.icon-ic_signal_cellular_null_18px:before,
+.icon-ic_signal_cellular_null_24px:before,
+.icon-ic_signal_cellular_off_18px:before,
+.icon-ic_signal_cellular_off_24px:before,
+.icon-ic_signal_wifi_0_bar_18px:before,
+.icon-ic_signal_wifi_0_bar_24px:before,
+.icon-ic_signal_wifi_1_bar_18px:before,
+.icon-ic_signal_wifi_1_bar_24px:before,
+.icon-ic_signal_wifi_2_bar_18px:before,
+.icon-ic_signal_wifi_2_bar_24px:before,
+.icon-ic_signal_wifi_3_bar_18px:before,
+.icon-ic_signal_wifi_3_bar_24px:before,
+.icon-ic_signal_wifi_4_bar_18px:before,
+.icon-ic_signal_wifi_4_bar_24px:before,
+.icon-ic_signal_wifi_off_18px:before,
+.icon-ic_signal_wifi_off_24px:before,
+.icon-ic_signal_wifi_statusbar_1_bar_26x24px:before,
+.icon-ic_signal_wifi_statusbar_2_bar_26x24px:before,
+.icon-ic_signal_wifi_statusbar_3_bar_26x24px:before,
+.icon-ic_signal_wifi_statusbar_4_bar_26x24px:before,
+.icon-ic_signal_wifi_statusbar_connected_no_internet_1_26x24px:before,
+.icon-ic_signal_wifi_statusbar_connected_no_internet_26x24px:before,
+.icon-ic_signal_wifi_statusbar_connected_no_internet_2_26x24px:before,
+.icon-ic_signal_wifi_statusbar_connected_no_internet_3_26x24px:before,
+.icon-ic_signal_wifi_statusbar_connected_no_internet_4_26x24px:before,
+.icon-ic_signal_wifi_statusbar_not_connected_26x24px:before,
+.icon-ic_signal_wifi_statusbar_null_26x24px:before,
+.icon-ic_storage_24px:before,
+.icon-ic_usb_18px:before,
+.icon-ic_usb_24px:before,
+.icon-ic_wifi_lock_24px:before,
+.icon-ic_wifi_tethering_24px:before {
+  display: inline-block;
+  font-family: "font-device";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-ic_access_alarm_24px:before { content: "\f100"; }
+.icon-ic_access_alarms_24px:before { content: "\f101"; }
+.icon-ic_access_time_24px:before { content: "\f102"; }
+.icon-ic_add_alarm_24px:before { content: "\f103"; }
+.icon-ic_airplanemode_off_24px:before { content: "\f104"; }
+.icon-ic_airplanemode_on_24px:before { content: "\f105"; }
+.icon-ic_battery_20_18px:before { content: "\f106"; }
+.icon-ic_battery_20_24px:before { content: "\f107"; }
+.icon-ic_battery_30_18px:before { content: "\f108"; }
+.icon-ic_battery_30_24px:before { content: "\f109"; }
+.icon-ic_battery_50_18px:before { content: "\f10a"; }
+.icon-ic_battery_50_24px:before { content: "\f10b"; }
+.icon-ic_battery_60_18px:before { content: "\f10c"; }
+.icon-ic_battery_60_24px:before { content: "\f10d"; }
+.icon-ic_battery_80_18px:before { content: "\f10e"; }
+.icon-ic_battery_80_24px:before { content: "\f10f"; }
+.icon-ic_battery_90_18px:before { content: "\f110"; }
+.icon-ic_battery_90_24px:before { content: "\f111"; }
+.icon-ic_battery_alert_18px:before { content: "\f112"; }
+.icon-ic_battery_alert_24px:before { content: "\f113"; }
+.icon-ic_battery_charging_20_18px:before { content: "\f114"; }
+.icon-ic_battery_charging_20_24px:before { content: "\f115"; }
+.icon-ic_battery_charging_30_18px:before { content: "\f116"; }
+.icon-ic_battery_charging_30_24px:before { content: "\f117"; }
+.icon-ic_battery_charging_50_18px:before { content: "\f118"; }
+.icon-ic_battery_charging_50_24px:before { content: "\f119"; }
+.icon-ic_battery_charging_60_18px:before { content: "\f11a"; }
+.icon-ic_battery_charging_60_24px:before { content: "\f11b"; }
+.icon-ic_battery_charging_80_18px:before { content: "\f11c"; }
+.icon-ic_battery_charging_80_24px:before { content: "\f11d"; }
+.icon-ic_battery_charging_90_18px:before { content: "\f11e"; }
+.icon-ic_battery_charging_90_24px:before { content: "\f11f"; }
+.icon-ic_battery_charging_full_18px:before { content: "\f120"; }
+.icon-ic_battery_charging_full_24px:before { content: "\f121"; }
+.icon-ic_battery_full_18px:before { content: "\f122"; }
+.icon-ic_battery_full_24px:before { content: "\f123"; }
+.icon-ic_battery_std_18px:before { content: "\f124"; }
+.icon-ic_battery_std_24px:before { content: "\f125"; }
+.icon-ic_battery_unknown_18px:before { content: "\f126"; }
+.icon-ic_battery_unknown_24px:before { content: "\f127"; }
+.icon-ic_bluetooth_24px:before { content: "\f128"; }
+.icon-ic_bluetooth_connected_24px:before { content: "\f129"; }
+.icon-ic_bluetooth_disabled_24px:before { content: "\f12a"; }
+.icon-ic_bluetooth_searching_24px:before { content: "\f12b"; }
+.icon-ic_brightness_auto_24px:before { content: "\f12c"; }
+.icon-ic_brightness_high_24px:before { content: "\f12d"; }
+.icon-ic_brightness_low_24px:before { content: "\f12e"; }
+.icon-ic_brightness_medium_24px:before { content: "\f12f"; }
+.icon-ic_data_usage_24px:before { content: "\f130"; }
+.icon-ic_developer_mode_24px:before { content: "\f131"; }
+.icon-ic_devices_24px:before { content: "\f132"; }
+.icon-ic_dvr_24px:before { content: "\f133"; }
+.icon-ic_gps_fixed_24px:before { content: "\f134"; }
+.icon-ic_gps_not_fixed_24px:before { content: "\f135"; }
+.icon-ic_gps_off_24px:before { content: "\f136"; }
+.icon-ic_location_disabled_24px:before { content: "\f137"; }
+.icon-ic_location_searching_24px:before { content: "\f138"; }
+.icon-ic_multitrack_audio_24px:before { content: "\f139"; }
+.icon-ic_network_cell_18px:before { content: "\f13a"; }
+.icon-ic_network_cell_24px:before { content: "\f13b"; }
+.icon-ic_network_wifi_18px:before { content: "\f13c"; }
+.icon-ic_network_wifi_24px:before { content: "\f13d"; }
+.icon-ic_nfc_24px:before { content: "\f13e"; }
+.icon-ic_now_wallpaper_18px:before { content: "\f13f"; }
+.icon-ic_now_wallpaper_24px:before { content: "\f140"; }
+.icon-ic_now_widgets_18px:before { content: "\f141"; }
+.icon-ic_now_widgets_24px:before { content: "\f142"; }
+.icon-ic_screen_lock_landscape_24px:before { content: "\f143"; }
+.icon-ic_screen_lock_portrait_24px:before { content: "\f144"; }
+.icon-ic_screen_lock_rotation_24px:before { content: "\f145"; }
+.icon-ic_screen_rotation_24px:before { content: "\f146"; }
+.icon-ic_sd_storage_24px:before { content: "\f147"; }
+.icon-ic_settings_system_daydream_24px:before { content: "\f148"; }
+.icon-ic_signal_cellular_0_bar_18px:before { content: "\f149"; }
+.icon-ic_signal_cellular_0_bar_24px:before { content: "\f14a"; }
+.icon-ic_signal_cellular_1_bar_18px:before { content: "\f14b"; }
+.icon-ic_signal_cellular_1_bar_24px:before { content: "\f14c"; }
+.icon-ic_signal_cellular_2_bar_18px:before { content: "\f14d"; }
+.icon-ic_signal_cellular_2_bar_24px:before { content: "\f14e"; }
+.icon-ic_signal_cellular_3_bar_18px:before { content: "\f14f"; }
+.icon-ic_signal_cellular_3_bar_24px:before { content: "\f150"; }
+.icon-ic_signal_cellular_4_bar_18px:before { content: "\f151"; }
+.icon-ic_signal_cellular_4_bar_24px:before { content: "\f152"; }
+.icon-ic_signal_cellular_connected_no_internet_0_bar_18px:before { content: "\f153"; }
+.icon-ic_signal_cellular_connected_no_internet_0_bar_24px:before { content: "\f154"; }
+.icon-ic_signal_cellular_connected_no_internet_1_bar_18px:before { content: "\f155"; }
+.icon-ic_signal_cellular_connected_no_internet_1_bar_24px:before { content: "\f156"; }
+.icon-ic_signal_cellular_connected_no_internet_2_bar_18px:before { content: "\f157"; }
+.icon-ic_signal_cellular_connected_no_internet_2_bar_24px:before { content: "\f158"; }
+.icon-ic_signal_cellular_connected_no_internet_3_bar_18px:before { content: "\f159"; }
+.icon-ic_signal_cellular_connected_no_internet_3_bar_24px:before { content: "\f15a"; }
+.icon-ic_signal_cellular_connected_no_internet_4_bar_18px:before { content: "\f15b"; }
+.icon-ic_signal_cellular_connected_no_internet_4_bar_24px:before { content: "\f15c"; }
+.icon-ic_signal_cellular_no_sim_24px:before { content: "\f15d"; }
+.icon-ic_signal_cellular_null_18px:before { content: "\f15e"; }
+.icon-ic_signal_cellular_null_24px:before { content: "\f15f"; }
+.icon-ic_signal_cellular_off_18px:before { content: "\f160"; }
+.icon-ic_signal_cellular_off_24px:before { content: "\f161"; }
+.icon-ic_signal_wifi_0_bar_18px:before { content: "\f162"; }
+.icon-ic_signal_wifi_0_bar_24px:before { content: "\f163"; }
+.icon-ic_signal_wifi_1_bar_18px:before { content: "\f164"; }
+.icon-ic_signal_wifi_1_bar_24px:before { content: "\f165"; }
+.icon-ic_signal_wifi_2_bar_18px:before { content: "\f166"; }
+.icon-ic_signal_wifi_2_bar_24px:before { content: "\f167"; }
+.icon-ic_signal_wifi_3_bar_18px:before { content: "\f168"; }
+.icon-ic_signal_wifi_3_bar_24px:before { content: "\f169"; }
+.icon-ic_signal_wifi_4_bar_18px:before { content: "\f16a"; }
+.icon-ic_signal_wifi_4_bar_24px:before { content: "\f16b"; }
+.icon-ic_signal_wifi_off_18px:before { content: "\f16c"; }
+.icon-ic_signal_wifi_off_24px:before { content: "\f16d"; }
+.icon-ic_signal_wifi_statusbar_1_bar_26x24px:before { content: "\f16e"; }
+.icon-ic_signal_wifi_statusbar_2_bar_26x24px:before { content: "\f16f"; }
+.icon-ic_signal_wifi_statusbar_3_bar_26x24px:before { content: "\f170"; }
+.icon-ic_signal_wifi_statusbar_4_bar_26x24px:before { content: "\f171"; }
+.icon-ic_signal_wifi_statusbar_connected_no_internet_1_26x24px:before { content: "\f172"; }
+.icon-ic_signal_wifi_statusbar_connected_no_internet_26x24px:before { content: "\f173"; }
+.icon-ic_signal_wifi_statusbar_connected_no_internet_2_26x24px:before { content: "\f174"; }
+.icon-ic_signal_wifi_statusbar_connected_no_internet_3_26x24px:before { content: "\f175"; }
+.icon-ic_signal_wifi_statusbar_connected_no_internet_4_26x24px:before { content: "\f176"; }
+.icon-ic_signal_wifi_statusbar_not_connected_26x24px:before { content: "\f177"; }
+.icon-ic_signal_wifi_statusbar_null_26x24px:before { content: "\f178"; }
+.icon-ic_storage_24px:before { content: "\f179"; }
+.icon-ic_usb_18px:before { content: "\f17a"; }
+.icon-ic_usb_24px:before { content: "\f17b"; }
+.icon-ic_wifi_lock_24px:before { content: "\f17c"; }
+.icon-ic_wifi_tethering_24px:before { content: "\f17d"; }
