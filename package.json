@@ -1,0 +1,27 @@
+{
+	"name": "opengsmgw",
+	"version": "0.0.1",
+	"description": "Open GSM Gateway",
+	"author": "Taras Remez <taras.remez@telix.com.ua>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tremez/opengsmgw"
+	},
+	"bugs": {
+		"url": "https://github.com/tremez/opengsmgw/issues"
+	},
+	"keywords": [
+		"opengsm",
+		"gsm gateway"
+	],
+	"dependencies": {
+		"asterisk-ami": "*",
+		"backbone": "*",
+		"MD5": "*",
+		"pdu": "*",
+		"restify": "*",
+		"socket.io": "*",
+		"tingodb": "*"
+	},
+	"license": "GPL"
+}
