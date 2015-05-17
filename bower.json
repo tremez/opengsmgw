@@ -1,0 +1,9 @@
+{
+	"name": "opengsmgw",
+	"version": "0.0.1",
+	"dependencies": {
+		"material-design-fonticons":"*",
+		"socket.io-client":"*",
+		"ext-gpl":"*",
+	},
+}
