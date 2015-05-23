@@ -17,6 +17,7 @@
 	"dependencies": {
 		"asterisk-ami": "*",
 		"backbone": "*",
+		"underscore": "*",
 		"MD5": "*",
 		"pdu": "*",
 		"restify": "*",

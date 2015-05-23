@@ -84,6 +84,7 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 			},
 			{
 				text:'U',
+				width: 40,
 				renderer:function(){
 					return 'U';
 				}
