@@ -81,6 +81,12 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 				width: 40,
 				renderer: this.callingPresRenderer,
 				scope: this
+			},
+			{
+				text:'U',
+				renderer:function(){
+					return 'U';
+				}
 			}
 		];
 
@@ -99,6 +105,8 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 			console.log(arguments);
 			this.getStore().load();
 		}.bind(this));
+
+
 
 
 		this.on('celldblclick',this.onCellDblClick);
@@ -187,16 +195,25 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 
 	},
 	onCellDblClick: function (sender, td, cellIndex, record, tr, rowIndex, e, eOpts) {
-		var settings=Ext.create('Common.model.GsmPortSettings',{
-			id:record.get('device')
-		});
-		settings.load({
-			success:function(){
-				console.log(settings);
-				this.showEditor(settings);
-			},
-			scope:this
-		});
+
+		switch (cellIndex){
+			case 9:
+				this.showUssdWindow(record);
+				break;
+			default:
+				var settings=Ext.create('Common.model.GsmPortSettings',{
+					id:record.get('device')
+				});
+				settings.load({
+					success:function(){
+						console.log(settings);
+						this.showEditor(settings);
+					},
+					scope:this
+				});
+				break;
+		}
+
 
 
 	},
@@ -239,6 +256,22 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 		});
 		win.show();
 	},
+	showUssdWindow: function (model) {
+		var ussdPanel = Ext.create('Ext.ux.GsmPorts.UssdPanel',{
+			model:model
+		});
+		var win = Ext.create('Ext.window.Window', {
+			width:500,
+			constrain:true,
+			resizable:false,
+			title: 'Send USSD',
+			items: [
+				ussdPanel
+			],
+		});
+		win.show();
+	},
+
 
 
 });

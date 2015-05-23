@@ -45,6 +45,8 @@ io.on('connection', function (socket) {
 });
 
 var dongles=new DonglesCollection();
+dongles.ami=ami;
+dongles.io=io;
 
 //--------SMS API----------//
 /*
@@ -59,8 +61,8 @@ SEND AN SMS Message
  */
 server.post('/sms/:port', function (req, res, next) {
 	var port=req.params.port;
-	var number=req.params.number;
-	var message=req.params.message;
+	var number=req.body.number;
+	var message=req.body.message;
 
 	var device=dongles.find(function(don){
 		return don.get('device')===port;
@@ -71,8 +73,37 @@ server.post('/sms/:port', function (req, res, next) {
 	res.send(req.params);
 	return next();
 });
+/*
+SEND USSD Request
+*/
+server.post('/ussd/:port', function (req, res, next) {
+	var port=req.params.port;
+	var ussd=req.body.ussd;
+
+	var device=dongles.find(function(don){
+		return don.get('device')===port;
+	});
+	if(device){
+		device.sendUssd(ussd)
+	}
+	res.send(req.params);
+	return next();
+});
 
 
+server.put('/ussd/:port', function (req, res, next) {
+	var port=req.params.port;
+	var ussd=req.body.ussd;
+
+	var device=dongles.find(function(don){
+		return don.get('device')===port;
+	});
+	if(device){
+		device.sendUssd(ussd)
+	}
+	res.send(req.params);
+	return next();
+});
 // ------ DONGLES API -------- //
 
 server.get('/ports/', function (req, res, next) {
@@ -179,14 +210,28 @@ ami.on('ami_data', function(evt){
 			currentOutgoingNumbers[dongle]='';
 		}
 
+		if(currentIncomingChannels[uniqueid]){
+			var dongle=currentIncomingChannels[uniqueid];
+			currentIncomingNumbers[dongle]='';
+		}
+
 	}
 	if(event==='DongleDeviceEntry'){
-		var dongle=new Dongle(evt);
-		dongle.set('outgoingNumber',currentOutgoingNumbers[dongle.get('device')]);
-		dongle.set('incomingNumber',currentIncomingNumbers[dongle.get('device')]);
+		var device=evt.device;
+		var dongle=dongles.find(function(don){
+			return don.get('device')===device;
+		});
+		if(dongle){
+			dongle.set(evt)
+		}else{
+			dongle=new Dongle(evt);
+			dongle.set('outgoingNumber',currentOutgoingNumbers[dongle.get('device')]);
+			dongle.set('incomingNumber',currentIncomingNumbers[dongle.get('device')]);
+			dongle.setAmi(ami);
+			dongle.io=io;
+			dongles.add(dongle);
+		}
 
-		dongle.ami=ami;
-		dongles.add(dongle);
 	};
 
 	if(event==='DongleShowDevicesComplete'){
@@ -194,16 +239,12 @@ ami.on('ami_data', function(evt){
 
 	};
 
-	if(event==='DongleSMSStatus'){
-	};
-
 	if(event==='DongleStatus'){
 		//Ports updated,need new status
-		console.log('UPDATING PORT INFO');
+		console.log('UPDATING PORT INFO',evt);
 		var showDevices={
 			action:"DongleShowDevices"
 		}
-		dongles.reset();
 		ami.send(showDevices)
 
 	}
@@ -221,7 +262,6 @@ ami.on('ami_login',function(){
 		ActionID:100500,
 		action:"DongleShowDevices"
 	}
-	dongles.reset();
 	ami.send(showDevices)
 })
 server.listen(8090, function () {
