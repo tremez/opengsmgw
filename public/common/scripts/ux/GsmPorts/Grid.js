@@ -97,6 +97,11 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 				text: 'Add',
 				handler: this.showEmptyEditor,
 				scope: this
+			},
+			{
+				text: 'Regenerate Config',
+				handler: this.regenerateConfig,
+				scope: this
 			}
 		]
 
@@ -207,7 +212,12 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 				});
 				settings.load({
 					success:function(){
-						console.log(settings);
+						if(settings.get('device')===''){
+							settings.set('device',record.get('device'));
+						}
+						if(settings.get('imei')===''){
+							settings.set('imei',record.get('imeistate'));
+						}
 						this.showEditor(settings);
 					},
 					scope:this
@@ -217,6 +227,10 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 
 
 
+	},
+	regenerateConfig:function(){
+		console.log('REGENERATE');
+		Ext.ux.Helper.SocketIO.getSocket().emit('regenerateConfig');
 	},
 	showEmptyEditor:function(){
 		var settings=Ext.create('Common.model.GsmPortSettings');

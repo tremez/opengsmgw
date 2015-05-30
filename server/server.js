@@ -1,3 +1,4 @@
+var fs = require('fs');
 var restify = require('restify');
 var AsteriskAmi = require('asterisk-ami');
 var Dongle=require('./models/Dongle');
@@ -15,7 +16,7 @@ var currentOutgoingChannels={};
 var currentIncomingChannels={};
 
 var server = restify.createServer({
-	name: 'Remez GSM API',
+	name: 'Open GSM Gateway',
 	version: ['1.0.0']
 });
 
@@ -39,10 +40,12 @@ var io = require('socket.io').listen(server.server);
 io.on('connection', function (socket) {
 	console.log('CC');
 	socket.emit('news', { hello: 'world' });
-	socket.on('my other event', function (data) {
-		console.log(data);
-	});
+	socket.on('regenerateConfig', function (data) {
+		regenerateConfig();
+	}.bind(this));
 });
+
+
 
 var dongles=new DonglesCollection();
 dongles.ami=ami;
@@ -240,12 +243,15 @@ ami.on('ami_data', function(evt){
 	};
 
 	if(event==='DongleStatus'){
-		//Ports updated,need new status
-		console.log('UPDATING PORT INFO',evt);
-		var showDevices={
-			action:"DongleShowDevices"
+		if(evt.status!=='Register'){
+			//Ports updated,need new status
+			//console.log('UPDATING PORT INFO',evt);
+			var showDevices={
+				action:"DongleShowDevices"
+			}
+			ami.send(showDevices)
 		}
-		ami.send(showDevices)
+
 
 	}
 
@@ -267,4 +273,60 @@ ami.on('ami_login',function(){
 server.listen(8090, function () {
 	console.log('%s listening at %s', server.name, server.url);
 });
+
+
+//----------------- SHOULD BE REMOVED TO EXTERNAL FILE BOJE MOY !//
+
+var regenerateConfig=function(){
+
+	fs.readFile('server/templates/dongle.conf', 'utf8', function (err,data) {
+		fs.writeFile('server/output/dongle.conf',data);
+		var settings=portSettingsCollection.find();
+		portSettingsCollection.find().each(function(err,item){
+			if(item){
+				var settings=new GsmPortSettings(item);
+				var sett=settings.getDongleConfig();
+				fs.appendFile('server/output/dongle.conf',sett);
+				fs.appendFile('server/output/dongle.conf','\n');
+
+			}
+		});
+	});
+
+	fs.readFile('server/templates/sip.conf', 'utf8', function (err,data) {
+		var settings=portSettingsCollection.find();
+		fs.writeFile('server/output/sip.conf','');
+
+		portSettingsCollection.find().each(function(err,item){
+			if(item){
+				var settings=new GsmPortSettings(item);
+				var sett=settings.getSipConfig();
+				fs.appendFile('server/output/sip.conf',sett);
+				fs.appendFile('server/output/sip.conf','\n');
+				fs.appendFile('server/output/sip.conf',data);
+				fs.appendFile('server/output/sip.conf','\n');
+
+
+			}
+		});
+	});
+
+	fs.writeFile('server/output/extensions.conf','');
+
+	portSettingsCollection.find().each(function(err,item){
+		if(item){
+			var settings=new GsmPortSettings(item);
+			var sett=settings.getExtensionConfig();
+			fs.appendFile('server/output/extensions.conf',sett);
+			fs.appendFile('server/output/extensions.conf','\n');
+
+
+
+		}
+	});
+
+
+
+
+}
 
