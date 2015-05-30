@@ -15,6 +15,7 @@
 		"gsm gateway"
 	],
 	"dependencies": {
+		"pm2":"*",
 		"asterisk-ami": "*",
 		"backbone": "*",
 		"underscore": "*",

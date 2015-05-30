@@ -20,6 +20,9 @@ var server = restify.createServer({
 	version: ['1.0.0']
 });
 
+var server_port = process.env.SERVER_PORT || 8090;
+
+
 server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
 server.use(restify.bodyParser({ mapParams: false }));
@@ -270,7 +273,7 @@ ami.on('ami_login',function(){
 	}
 	ami.send(showDevices)
 })
-server.listen(8090, function () {
+server.listen(server_port, function () {
 	console.log('%s listening at %s', server.name, server.url);
 });
 
