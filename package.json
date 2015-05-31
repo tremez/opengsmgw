@@ -23,7 +23,11 @@
 		"pdu": "*",
 		"restify": "*",
 		"socket.io": "*",
-		"tingodb": "*"
+		"tingodb": "*",
+		"udev":"*",
+		"serialport":"*"
+
+
 	},
 	"license": "GPL"
 }
