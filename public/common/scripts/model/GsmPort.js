@@ -26,7 +26,7 @@ Ext.define('Common.model.GsmPort', {
 	idProperty:'device',
 	proxy: {
 		type: 'rest',
-		url : 'http://localhost:8090/ports',
+		url : '/ports',
 		writer:{
 			writeAllFields:true
 		}

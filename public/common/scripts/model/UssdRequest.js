@@ -8,7 +8,7 @@ Ext.define('Common.model.UssdRequest', {
 	idProperty:'device',
 	proxy: {
 		type: 'rest',
-		url : 'http://localhost:8090/ussd',
+		url : '/ussd',
 		writer:{
 			writeAllFields:true
 		}
