@@ -7,8 +7,7 @@ var events = require('events').EventEmitter;
 var net = require('net');
 
 
-module.exports = ttyDiscover;
-function ttyDiscover(params){
+var ttyDiscover=function(){
 	var monitor = udev.monitor();
 	var me=this;
 	monitor.on('add', function (device) {
@@ -39,13 +38,15 @@ function ttyDiscover(params){
 		}
 	});
 
+	return this;
+
 
 
 
 }
 
 util.inherits(ttyDiscover, events);
-
+module.exports=ttyDiscover;
 
 
 
