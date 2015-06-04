@@ -10,7 +10,7 @@ var db = new Db('./server/data/', {});
 var portsCollection = db.collection("gsmports");
 var portSettingsCollection = db.collection("gsmportsettings");
 
-var ttydiscover = require('./ttydiscover');
+var ttydiscover = new require('./ttydiscover')();
 ttydiscover.on('newimei',function(imei){
 	console.log(imei);
 })
