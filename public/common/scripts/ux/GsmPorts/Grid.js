@@ -239,6 +239,7 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 		settings.set('imei', newImei);
 		settings.load({
 			success: function () {
+				settings.set('imei', newImei);
 				this.showEditor(settings);
 			},
 			scope: this
