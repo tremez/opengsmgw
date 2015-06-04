@@ -11,7 +11,9 @@ var portsCollection = db.collection("gsmports");
 var portSettingsCollection = db.collection("gsmportsettings");
 
 var ttydiscover = require('./ttydiscover');
-
+ttydiscover.on('newimei',function(imei){
+	console.log(imei);
+})
 
 var currentOutgoingNumbers={};
 var currentIncomingNumbers={};
