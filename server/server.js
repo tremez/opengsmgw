@@ -9,9 +9,12 @@ var assert = require('assert');
 var db = new Db('./server/data/', {});
 var portsCollection = db.collection("gsmports");
 var portSettingsCollection = db.collection("gsmportsettings");
+
+var ttydiscover = require('./ttydiscover');
+
+
 var currentOutgoingNumbers={};
 var currentIncomingNumbers={};
-
 var currentOutgoingChannels={};
 var currentIncomingChannels={};
 
