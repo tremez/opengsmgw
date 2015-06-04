@@ -12,9 +12,6 @@ var portSettingsCollection = db.collection("gsmportsettings");
 
 var ttydiscover =  require('./ttydiscover');
 var discover=new ttydiscover();
-discover.on('newimei',function(imei){
-	console.log(imei);
-})
 
 var currentOutgoingNumbers={};
 var currentIncomingNumbers={};
@@ -282,6 +279,14 @@ ami.on('ami_login',function(){
 server.listen(server_port, function () {
 	console.log('%s listening at %s', server.name, server.url);
 });
+
+
+discover.on('newimei',function(imei){
+	//TODO fire event only if such IMEI is not present
+	io.sockets.emit('newimei',imei);
+
+});
+
 
 
 //----------------- SHOULD BE REMOVED TO EXTERNAL FILE BOJE MOY !//

@@ -83,9 +83,9 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 				scope: this
 			},
 			{
-				text:'U',
+				text: 'U',
 				width: 40,
-				renderer:function(){
+				renderer: function () {
 					return 'U';
 				}
 			}
@@ -112,10 +112,12 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 			this.getStore().load();
 		}.bind(this));
 
+		Ext.ux.Helper.SocketIO.getSocket().on('newimei', function (newImei) {
+			this.onNewImei(newImei);
+		}.bind(this));
 
 
-
-		this.on('celldblclick',this.onCellDblClick);
+		this.on('celldblclick', this.onCellDblClick);
 
 	},
 
@@ -202,66 +204,79 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 	},
 	onCellDblClick: function (sender, td, cellIndex, record, tr, rowIndex, e, eOpts) {
 
-		switch (cellIndex){
+		switch (cellIndex) {
 			case 9:
 				this.showUssdWindow(record);
 				break;
 			default:
-				var settings=Ext.create('Common.model.GsmPortSettings',{
-					id:record.get('device')
+				var settings = Ext.create('Common.model.GsmPortSettings', {
+					id: record.get('device')
 				});
 				settings.load({
-					success:function(){
-						if(settings.get('device')===''){
-							settings.set('device',record.get('device'));
+					success: function () {
+						if (settings.get('device') === '') {
+							settings.set('device', record.get('device'));
 						}
-						if(settings.get('imei')===''){
-							settings.set('imei',record.get('imeistate'));
+						if (settings.get('imei') === '') {
+							settings.set('imei', record.get('imeistate'));
 						}
 						this.showEditor(settings);
 					},
-					scope:this
+					scope: this
 				});
 				break;
 		}
 
 
-
 	},
-	regenerateConfig:function(){
+	regenerateConfig: function () {
 		console.log('REGENERATE');
 		Ext.ux.Helper.SocketIO.getSocket().emit('regenerateConfig');
 	},
-	showEmptyEditor:function(){
-		var settings=Ext.create('Common.model.GsmPortSettings');
+	onNewImei: function (newImei) {
+
+		var settings = Ext.create('Common.model.GsmPortSettings');
+		settings.set('imei', newImei);
 		settings.load({
-			success:function(){
+			success: function () {
+				this.showEditor(settings);
+			},
+			scope: this
+		});
+
+
+	},
+
+	showEmptyEditor: function () {
+		var settings = Ext.create('Common.model.GsmPortSettings');
+		settings.load({
+			success: function () {
 				console.log(settings);
 				this.showEditor(settings);
 			},
-			scope:this
+			scope: this
 		});
 
 	},
 	showEditor: function (model) {
-		var editorPanel = Ext.create('Ext.ux.GsmPorts.EditorPanel',{
-			model:model
+		var editorPanel = Ext.create('Ext.ux.GsmPorts.EditorPanel', {
+			model: model
 		});
 		var win = Ext.create('Ext.window.Window', {
-			width:500,
-			constrain:true,
-			resizable:false,
+			width: 500,
+			constrain: true,
+			resizable: false,
 			title: 'Edit GSM Port',
 			items: [
 				editorPanel
 			],
-			buttons:[
+			buttons: [
 				{
-					text:'Save',
-					handler:function(){
+					text: 'Save',
+					handler: function () {
 						editorPanel.prepareModel();
 						model.save({
-							success:function(){
+							success: function () {
 								win.close();
 							}
 						});
@@ -272,13 +287,13 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 		win.show();
 	},
 	showUssdWindow: function (model) {
-		var ussdPanel = Ext.create('Ext.ux.GsmPorts.UssdPanel',{
-			model:model
+		var ussdPanel = Ext.create('Ext.ux.GsmPorts.UssdPanel', {
+			model: model
 		});
 		var win = Ext.create('Ext.window.Window', {
-			width:500,
-			constrain:true,
-			resizable:false,
+			width: 500,
+			constrain: true,
+			resizable: false,
 			title: 'Send USSD',
 			items: [
 				ussdPanel
@@ -286,7 +301,6 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 		});
 		win.show();
 	},
-
 
 
 });
