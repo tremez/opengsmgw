@@ -49,6 +49,9 @@ io.on('connection', function (socket) {
 	socket.on('regenerateConfig', function (data) {
 		regenerateConfig();
 	}.bind(this));
+	socket.on('refreshData', function (data) {
+		refreshData();
+	}.bind(this));
 });
 
 
@@ -343,4 +346,10 @@ var regenerateConfig=function(){
 
 
 }
-
+var refreshData=function(){
+	var showDevices={
+		ActionID:100500,
+		action:"DongleShowDevices"
+	}
+	ami.send(showDevices)
+}

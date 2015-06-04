@@ -102,6 +102,11 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 				text: 'Regenerate Config',
 				handler: this.regenerateConfig,
 				scope: this
+			},
+			{
+				text: 'Refresh',
+				handler: this.refreshData,
+				scope: this
 			}
 		]
 
@@ -232,6 +237,10 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 	regenerateConfig: function () {
 		console.log('REGENERATE');
 		Ext.ux.Helper.SocketIO.getSocket().emit('regenerateConfig');
+	},
+	refreshData: function () {
+		console.log('REFRESH');
+		Ext.ux.Helper.SocketIO.getSocket().emit('refreshData');
 	},
 	onNewImei: function (newImei) {
 
