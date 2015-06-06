@@ -121,6 +121,9 @@ Ext.define('Ext.ux.GsmPorts.Grid', {
 			this.onNewImei(newImei);
 		}.bind(this));
 
+		Ext.ux.Helper.SocketIO.getSocket().on('portfailed', function (data) {
+			console.log('PORT FAILED',data)
+		}.bind(this));
 
 		this.on('celldblclick', this.onCellDblClick);
 

@@ -36,6 +36,15 @@ Ext.define('Ext.ux.title.Panel', {
 				document.location.href='../GsmPorts/'
 			}
 		},
+		{
+			xtype:'button',
+			text:'Statistics',
+			height:30,
+
+			handler:function(){
+				document.location.href='../GsmPorts/'
+			}
+		},
 
 
 	],

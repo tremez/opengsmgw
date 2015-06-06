@@ -264,6 +264,11 @@ ami.on('ami_data', function(evt){
 
 	}
 
+	if(event==='DonglePortFail'){
+		io.sockets.emit('portfailed',evt);
+
+	}
+
 
 	//decide between Events and non events here and what to do with them, maybe run an event emitter for the ones you care about
 });
