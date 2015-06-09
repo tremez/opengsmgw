@@ -57,7 +57,7 @@ Ext.define('Ext.ux.PowerManagement.ActionPanel', {
 		var currentResult=this.queryById('actionResult').getValue();
 		currentResult+='Request: '+action + ' / ' +this.getModel().get('label')  +'\n';
 		this.queryById('actionResult').setValue(currentResult);
-		this.setLoading(true);
+		//this.setLoading(true);
 		this.getModel().sendRequest(action);
 
 	}

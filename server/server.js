@@ -13,6 +13,10 @@ var portsCollection = db.collection("gsmports");
 var portSettingsCollection = db.collection("gsmportsettings");
 var relaysCollection = db.collection("relays");
 
+var relayManager=require('./relayManager');
+//var relayManager=RelayManager();
+
+console.log(relayManager.setStatus);
 
 
 var currentOutgoingNumbers={};
@@ -110,6 +114,14 @@ server.post('/relays/', function (req, res, next) {
 		res.send(relay.toJSON());
 
 	});
+});
+
+server.post('/relayrequest', function (req, res, next) {
+	var pin=req.body.pin;
+	var action=req.body.action;
+	relayManager.setStatus(pin,action);
+	res.send(req.params);
+	return next();
 });
 
 //--------SMS API----------//
