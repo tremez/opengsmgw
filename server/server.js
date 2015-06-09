@@ -4,14 +4,16 @@ var AsteriskAmi = require('asterisk-ami');
 var Dongle=require('./models/Dongle');
 var DonglesCollection=require('./collections/Dongles');
 var GsmPortSettings=require('./models/GsmPortSettings');
+var Relay=require('./models/Relay');
+
 var Db = require('tingodb')().Db;
 var assert = require('assert');
 var db = new Db('./server/data/', {});
 var portsCollection = db.collection("gsmports");
 var portSettingsCollection = db.collection("gsmportsettings");
+var relaysCollection = db.collection("relays");
 
-var ttydiscover =  require('./ttydiscover');
-var discover=new ttydiscover();
+
 
 var currentOutgoingNumbers={};
 var currentIncomingNumbers={};
@@ -59,6 +61,56 @@ io.on('connection', function (socket) {
 var dongles=new DonglesCollection();
 dongles.ami=ami;
 dongles.io=io;
+
+//-------- RELAYS API -----//
+server.get('/relays', function (req, res, next) {
+	relaysCollection.find().toArray(function(err,records){
+		var ret={
+			records:records,
+			total:records.length
+		}
+		res.send(ret);
+
+	});
+
+});
+
+
+
+
+server.get('/relays/:device', function (req, res, next) {
+	var id=req.params.id;
+	relaysCollection.findOne({id:id}, function(err, item) {
+		console.log(item);
+		var relay=new Relay(item);
+		res.send(relay.toJSON());
+	})
+});
+
+server.put('/relays/:device', function (req, res, next) {
+	var data=req.body;
+	console.log(data);
+	var relay=new Relay(data);
+
+	relaysCollection.update({id:relay.get('id')},relay.toJSON(),{upsert:true},function(){
+		console.log(arguments);
+		res.send(relay.toJSON());
+
+	});
+});
+
+
+server.post('/relays/', function (req, res, next) {
+	var data=req.body;
+	console.log(data);
+	var relay=new Relay(data);
+
+	relaysCollection.update({id:relay.get('id')},relay.toJSON(),{upsert:true},function(){
+		console.log(arguments);
+		res.send(relay.toJSON());
+
+	});
+});
 
 //--------SMS API----------//
 /*
@@ -266,6 +318,7 @@ ami.on('ami_data', function(evt){
 
 	if(event==='DonglePortFail'){
 		io.sockets.emit('portfailed',evt);
+		console.log(evt);
 
 	}
 
@@ -289,11 +342,13 @@ server.listen(server_port, function () {
 });
 
 
-discover.on('newimei',function(imei){
-	//TODO fire event only if such IMEI is not present
-	io.sockets.emit('newimei',imei);
-
-});
+//var ttydiscover =  require('./ttydiscover');
+//var discover=new ttydiscover();
+//discover.on('newimei',function(imei){
+//	//TODO fire event only if such IMEI is not present
+//	io.sockets.emit('newimei',imei);
+//
+//});
 
 
 

@@ -38,11 +38,20 @@ Ext.define('Ext.ux.title.Panel', {
 		},
 		{
 			xtype:'button',
-			text:'Statistics',
+			text:'Power Management',
 			height:30,
 
 			handler:function(){
-				document.location.href='../GsmPorts/'
+				document.location.href='../PowerManagement/'
+			}
+		},
+		{
+			xtype:'button',
+			text:'Statistics/Logs',
+			height:30,
+
+			handler:function(){
+				document.location.href='../Statistics/'
 			}
 		},
 
