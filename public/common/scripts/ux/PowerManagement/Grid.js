@@ -6,18 +6,24 @@ Ext.define('Ext.ux.PowerManagement.Grid', {
 		'Common.store.Relay',
 		'Common.model.Relay',
 	],
-	config: {},
+	config: {
+		actionWindow:null,
+		requestPanel:null
+	},
 	title: 'Relays List',
 	viewConfig: {
 		enableTextSelection: true
 	},
 
 	initComponent: function () {
+
+		this.setRequestPanel(Ext.create('Ext.ux.PowerManagement.ActionPanel'));
 		this.store = this.store || Ext.create('Common.store.Relay',
 			{
 				autoLoad: true,
 				remoteSort: false
 			});
+		this.store.sort('shieldPort');
 		this.columns = [
 
 			{
@@ -139,18 +145,25 @@ Ext.define('Ext.ux.PowerManagement.Grid', {
 		win.show();
 	},
 	showActionWindow: function (model) {
-		var requestPanel = Ext.create('Ext.ux.PowerManagement.ActionPanel', {
-			model: model
-		});
-		var win = Ext.create('Ext.window.Window', {
-			width: 500,
-			constrain: true,
-			resizable: false,
-			title: 'Send Request',
-			items: [
-				requestPanel
-			],
-		});
+		this.getRequestPanel().setModel(model);
+		var win=this.getActionWindow();
+		if(!win){
+			this.setActionWindow(
+				Ext.create('Ext.window.Window', {
+					width: 500,
+					constrain: true,
+					resizable: false,
+					closeAction:'hide',
+					title: 'Send Request',
+					items: [
+						this.getRequestPanel()
+					],
+				}));
+
+			win=this.getActionWindow();
+
+		}
+		win.setTitle('Send Request : ' +model.get('label'));
 		win.show();
 	},
 

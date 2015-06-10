@@ -23,12 +23,14 @@ Ext.define('Ext.ux.PowerManagement.ActionPanel', {
 				align: 'stretch'
 			},
 			items:[
+
+
 				{
-					xtype:'textfield',
+					xtype:'combo',
 					emptyText:'Action',
 					itemId:'actionText',
-
-					flex:1
+					flex:1,
+					store:['ON','OFF','STATUS']
 				},
 				{
 					xtype:'button',
@@ -40,6 +42,7 @@ Ext.define('Ext.ux.PowerManagement.ActionPanel', {
 		{
 			xtype:'textarea',
 			itemId:'actionResult',
+			disabled:true
 
 		}
 
@@ -57,20 +60,21 @@ Ext.define('Ext.ux.PowerManagement.ActionPanel', {
 			console.log('aaa',data)
 			var currentResult=this.queryById('actionResult').getValue();
 			currentResult+='Response: '+data+'\n';
-			currentResult=currentResult.replace("\r","");
-			currentResult=currentResult.replace("\n","");
-
 			this.queryById('actionResult').setValue(currentResult);
 			this.setLoading(false);
 		}.bind(this));
 	},
 	onActionButtonClick:function(){
 		var action=this.queryById('actionText').getValue();
-		var currentResult=this.queryById('actionResult').getValue();
-		currentResult+='Request: '+action + ' / ' +this.getModel().get('label')  +'\n';
+		if(!action){
+			return;
+		}
+		//var currentResult=this.queryById('actionResult').getValue();
+		var currentResult='Request: '+action + ' / ' +this.getModel().get('label')  +'\n';
 		this.queryById('actionResult').setValue(currentResult);
-		//this.setLoading(true);
+		this.setLoading(true);
 		this.getModel().sendRequest(action);
+
 
 	}
 
