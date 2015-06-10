@@ -4,7 +4,8 @@ Ext.define('Ext.ux.PowerManagement.ActionPanel', {
 
 	requires: [
 		'Common.model.GsmPort',
-		'Ext.ux.Helper.SocketIO'
+		'Ext.ux.Helper.SocketIO',
+
 	],
 	config: {
 		model:null
@@ -39,7 +40,6 @@ Ext.define('Ext.ux.PowerManagement.ActionPanel', {
 		{
 			xtype:'textarea',
 			itemId:'actionResult',
-			height:400
 
 		}
 
@@ -51,6 +51,18 @@ Ext.define('Ext.ux.PowerManagement.ActionPanel', {
 	initComponent: function () {
 		this.callParent(arguments);
 		this.queryById('actionButton').on('click',this.onActionButtonClick,this);
+
+
+		Ext.ux.Helper.SocketIO.getSocket().on('relay:response', function (data) {
+			console.log('aaa',data)
+			var currentResult=this.queryById('actionResult').getValue();
+			currentResult+='Response: '+data+'\n';
+			currentResult=currentResult.replace("\r","");
+			currentResult=currentResult.replace("\n","");
+
+			this.queryById('actionResult').setValue(currentResult);
+			this.setLoading(false);
+		}.bind(this));
 	},
 	onActionButtonClick:function(){
 		var action=this.queryById('actionText').getValue();
