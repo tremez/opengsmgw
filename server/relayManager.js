@@ -5,7 +5,7 @@ var util = require('util');
 var events = require('events').EventEmitter;
 var net = require('net');
 
-var dev='/dev/tty.usbmodem145121';
+var dev='/dev/ttyACM0';
 var serialPort = new SerialPort(dev, {
 	baudrate: 9600
 });
